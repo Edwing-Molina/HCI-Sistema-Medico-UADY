@@ -31,10 +31,10 @@ Estos requisitos están diseñados para mitigar las barreras tecnológicas de lo
 
 | ID | Atributo | Especificación |
 | :--- | :--- | :--- |
-| **RNF-U-01** | **Legibilidad** | La interfaz debe soportar el escalado de fuentes del sistema operativo, manteniendo un tamaño base de **16px** para garantizar la lectura en el rango de edad de 45-70 años[cite: 20, 24]. |
-| **RNF-U-02** | **Contraste** |El diseño debe cumplir con el nivel **AA (WCAG 2.1)** con un ratio de contraste mínimo de 4.5:1 para reducir la fatiga visual[cite: 24]. |
-| **RNF-U-03** | **Interactividad** | Los botones y elementos clicables deben tener un área mínima de **44x44 dp** para facilitar la pulsación a usuarios con menor experiencia digital[cite: 13]. |
-| **RNF-U-04** | **Carga Cognitiva** | El flujo de agendado debe emplear revelación progresiva, mostrando un máximo de 3 campos por pantalla para evitar saturar al usuario[cite: 24]. |
-| **RNF-U-05** | **Navegación Clara** | Los iconos del menú inferior (RF14) deben incluir etiquetas de texto obligatorias para asegurar que la interfaz no requiera habilidades organizativas avanzadas[cite: 16]. |
-| **RNF-U-06** | **Mensajes Humanos** | Los errores deben describirse en lenguaje natural y no técnico, explicando siempre el paso a seguir para solucionar el inconveniente[cite: 15]. |
-| **RNF-U-07** | **Feedback Visual** | Ante cualquier acción que dure más de 200ms, el sistema debe mostrar un indicador de carga para mitigar la ansiedad ante interfaces digitales[cite: 24]. |
+| **RNF-U-01** | **Legibilidad** | La interfaz debe soportar el escalado de fuentes del sistema operativo, manteniendo un tamaño base de **16px** para garantizar la lectura en el rango de edad de 45-70 años. |
+| **RNF-U-02** | **Contraste** |El diseño debe cumplir con el nivel **AA (WCAG 2.1)** con un ratio de contraste mínimo de 4.5:1 para reducir la fatiga visual. |
+| **RNF-U-03** | **Interactividad** | Los botones y elementos clicables deben tener un área mínima de **44x44 dp** para facilitar la pulsación a usuarios con menor experiencia digital. |
+| **RNF-U-04** | **Carga Cognitiva** | El flujo de agendado debe emplear revelación progresiva, mostrando un máximo de 3 campos por pantalla para evitar saturar al usuario. |
+| **RNF-U-05** | **Navegación Clara** | Los iconos del menú inferior (RF14) deben incluir etiquetas de texto obligatorias para asegurar que la interfaz no requiera habilidades organizativas avanzadas. |
+| **RNF-U-06** | **Mensajes Humanos** | Los errores deben describirse en lenguaje natural y no técnico, explicando siempre el paso a seguir para solucionar el inconveniente. |
+| **RNF-U-07** | **Feedback Visual** | Ante cualquier acción que dure más de 200ms, el sistema debe mostrar un indicador de carga para mitigar la ansiedad ante interfaces digitales. |
