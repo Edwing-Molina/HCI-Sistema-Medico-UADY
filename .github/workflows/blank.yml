@@ -1,0 +1,42 @@
+name: Auto PR to Main (Assigned & Labeled)
+
+on:
+  push:
+    branches-ignore:
+      - 'main'
+
+jobs:
+  create-pull-request:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create or Check Pull Request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          CURRENT_BRANCH=${{ github.ref_name }}
+          LABEL="automated-pr"
+          
+          # Buscamos si ya existe un PR abierto para esta rama
+          PR_EXISTS=$(gh pr list --head "$CURRENT_BRANCH" --base main --json number --jq '.[0].number')
+          
+          if [ -z "$PR_EXISTS" ]; then
+            echo "Creando PR para $CURRENT_BRANCH, asignado a $OWNER con etiqueta $LABEL..."
+            
+            gh pr create \
+              --title "Sync: $CURRENT_BRANCH to main" \
+              --body "PR automático generado por GitHub Actions. Revisión requerida por el dueño del repositorio." \
+              --base main \
+              --head "$CURRENT_BRANCH" \
+              --assignee "$OWNER" \
+              --label "$LABEL"
+          else
+            echo "El PR #$PR_EXISTS ya existe. No se requiere acción adicional."
+          fi
