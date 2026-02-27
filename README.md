@@ -1,35 +1,16 @@
 # HCI-Sistema-Medico-UADY
 
-## Requirements Specification - UADY Medical Service App
+## Application Objective
 
-This document outlines the functional and non-functional requirements for the application dedicated to the beneficiaries of the Medical Service at the Autonomous University of Yucatan.
+The main objective of the application is to simplify and digitize the procedures that beneficiaries of the Medical Service at the UADY currently perform in person at the service window or by phone.
 
-### 1. Functional Requirements (FR)
+The goal is to develop an inclusive mobile tool that allows all beneficiaries regardless of their level of technological experience to schedule medical appointments, manage medical passes, consult their medical records, and handle procedures for their dependents (children and spouses) in an autonomous, secure, and efficient manner.
 
-| ID | Requirement Name | Description |
-| :--- | :--- | :--- |
-| **FR01** | **Splash Screen** | The system must display a startup screen with institutional colors and the app version for a minimum of 1.5 seconds as a visual loading indicator. |
-| **FR02** | **Office 365 Authentication** | The system must allow login using an institutional Office 365 account via a dedicated button. |
-| **FR03** | **Employment Status Validation** | Upon login, the system must verify in real-time if the employee is active in the database; otherwise, display: "User is not active." |
-| **FR04** | **Local Data Persistence** | The system must store the access token, full name, email, and employee ID in local storage to prevent redundant queries. |
-| **FR05** | **Secure Logout** | The app must invalidate Office 365 and local API tokens, presenting a confirmation modal before proceeding. |
-| **FR06** | **Patient Selection** | The system must allow choosing between the employee or their beneficiaries via a mandatory selector that updates the interface dynamically. |
-| **FR07** | **Appointment Scheduling** | Users can select specialty, shift, date, and doctor. The calendar will only be enabled after selecting the specialty and shift. |
-| **FR08** | **Campus-based Availability** | The system must filter available doctors and schedules based on the employee's assigned campus (e.g., Exact Sciences, Social Sciences). |
-| **FR09** | **List and Detail View** | Display future appointments in ascending chronological order with full details: folio, doctor, specialty, shift, date, and time (24h format). |
-| **FR10** | **Appointment Cancellation** | Allow cancelling appointments from the list/detail view with a modal warning: "This cancellation counts toward your annual limit." |
-| **FR11** | **Cancellation Limit Control** | The system must automatically block scheduling when the configurable limit is reached (default is 3 cancellations). |
-| **FR12** | **Administrative Block Notification** | If the user is blocked, display a persistent message indicating that unblocking can only be done via email. |
-| **FR13** | **Connection Error Feedback** | Detect lack of internet or timeout (10 sec) and show the message: "We cannot connect to the internet, please check your connection." |
-| **FR14** | **Persistent Navigation Menu** | Include a fixed Bottom Navigation Bar with access to Home, Passes, Medical Record, and Appointments. |
-| **FR15** | **Beneficiary Search** | Real-time filter starting at 3 characters, case-insensitive and ignoring accents to reduce typing effort. |
-| **FR16** | **Settings Screen** | Display the logged-in user's email and provide external links to the Privacy Notice and Operations Manual. |
+The application is designed under a User-Centered Design (UCD) approach, prioritizing accessibility and usability for two contrasting profiles: manual labor workers (janitors, maintenance staff) with significant technological barriers, and faculty/administrative staff (ages 45-55) with needs for legibility and clear navigation. This dual approach aims to bridge the digital gap between manual and digital processes for all levels of the university community.
 
----
+## Non-Functional Requeriments
 
-### 2. Non-Functional Requirements (NFR) - Usability & Accessibility
-
-These requirements are designed to mitigate technological barriers for **Manual Labor Users** and visual fatigue for **Faculty/Administrative Staff (ages 45-70)**.
+These requirements are designed to mitigate technological barriers for **Manual Labor Users** and visual fatigue for **Faculty/Administrative Staff (ages 45-55)**.
 
 | ID | Attribute | Specification |
 | :--- | :--- | :--- |
@@ -40,3 +21,54 @@ These requirements are designed to mitigate technological barriers for **Manual 
 | **NFR-U-05** | **Clear Navigation** | Bottom menu icons (FR14) must include mandatory text labels to ensure the interface does not require advanced organizational skills. |
 | **NFR-U-06** | **Human Language** | Errors must be described in natural, non-technical language, always explaining the next step to resolve the issue. |
 | **NFR-U-07** | **Visual Feedback** | For any action lasting longer than 200ms, the system must show a loading indicator to mitigate anxiety when using digital interfaces. |
+
+### Activities:
+To achieve this, the workflow will be executed across four strategic pillars:
+
+- **User Research and Testing (UCD)**: We will conduct usability testing sessions with the two critical profiles of the university community: manual labor staff facing technological barriers and faculty/administrative staff (ages 45-55). The objective is to identify real-world obstacles encountered when interacting with technology and to understand their specific needs for trust and guidance.
+
+- **Digital Gap Analysis**: We will process the gathered data to design navigation flows that eliminate complexity. We will prioritize solutions that translate "service window" procedures into intuitive digital steps, ensuring that no beneficiary is excluded regardless of their level of technical expertise.
+
+- **High-Fidelity Inclusive Prototyping**: We will create visual mockups leveraging UADY’s institutional identity to foster user trust. The design will focus on flat information architecture, oversized touch targets for ease of interaction, and a clear visual hierarchy to enhance legibility.
+
+- **Non-Functional Requirements Audit**: We will evaluate the proposal under strict accessibility standards (WCAG 2.1) for users with diminished vision, as well as technical efficiency to ensure the application performs reliably on mid-to-low-end devices or under unstable network conditions across the campus.
+
+Expected Outcome: A validated mobile application model that reduces physical queues, optimizes response times, and guarantees that all UADY beneficiaries—from maintenance staff to senior leadership—can manage their health in a dignified, autonomous, and efficient manner.
+
+### This repository will store:
+
+- **Planning documents:** Research plan, activity schedule, roles and 
+  responsibilities, and UCD methodology.
+- **User research:** Stakeholder analysis, Personas.
+- **Data collection instruments:** Observation guides, interview guides, 
+  surveys, and informed consent forms.
+- **Requirements definition:** User, Functional, and Non-Functional Requirements in MD, PDF.
+- **Research results:** Observation notes, interview transcriptions, data 
+  analysis, and key findings (future deliveries).
+- **Design:** Wireframes, mockups, prototypes, and design system (future 
+  deliveries).
+- **Evaluation:** Usability testing reports 
+  (future deliveries).
+- **Individual reflections:** Each team member's reflections per delivery.
+
+
+### Roles and Responsibilities
+
+- **Edwing Molina Chim:** Project Lead & Repository Manager. Responsible for 
+  the structure and organization of the GitHub repository, definition of 
+  non-functional usability and accessibility requirements, integration of 
+  documents from all areas, overall team coordination, and ensuring 
+  consistency between deliverables.
+
+- **Alejandro Magdiel Durán Varela:** Requirements Engineer. Responsible 
+  for the definition and formal documentation of User Requirements, 
+  Functional Requirements (FR01-FR16), and their connection with stakeholder 
+  needs. In charge of generating professional PDF documents and bilingual 
+  versions (Spanish/English) of the requirements.
+
+- **Lexus Harit Parra Kauil:** UX Researcher. Responsible for research plan design, the creation of Personas and Usage Scenarios based on the Nielsen and Ramdhani methodology, and the benchmarking analysis of similar systems.
+
+- **Jesús Everardo Jiménez Rivera:** UX Analyst & Documentation Specialist. In charge of defining User Research activities, designing data collection instruments (interview guides, observation guides, and surveys), and conducting stakeholder analysis. Also responsible for documentation of the UCD methodology, and cross-review and validation of deliverables.
+
+## Main Plan:
+[Main Plan](1st Delivery\ProjectPlan.md)
