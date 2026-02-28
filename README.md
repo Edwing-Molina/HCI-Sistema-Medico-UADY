@@ -71,4 +71,5 @@ Expected Outcome: A validated mobile application model that reduces physical que
 - **Jesús Everardo Jiménez Rivera:** UX Analyst & Documentation Specialist. In charge of defining User Research activities, designing data collection instruments (interview guides, observation guides, and surveys), and conducting stakeholder analysis. Also responsible for documentation of the UCD methodology, and cross-review and validation of deliverables.
 
 ## Main Plan:
-[Main Plan](1st Delivery\ProjectPlan.md)
+
+[MainPlan](1st Delivery/ProjectPlan.md)
