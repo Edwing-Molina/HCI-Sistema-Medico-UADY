@@ -72,4 +72,9 @@ Expected Outcome: A validated mobile application model that reduces physical que
 
 ## Main Plan:
 
-[MainPlan](1st Delivery/ProjectPlan.md)
+[MainPlan](https://github.com/Edwing-Molina/HCI-Sistema-Medico-UADY/blob/main/1st%20Delivery/ProjectPlan.md)
+
+## First Delivery Video:
+
+[Click the link to view our presentation](https://drive.google.com/file/d/1SSjSEpLmqa363b7tCytsSri5IPLIOaxw/view?usp=drive_link)
+:) !!
