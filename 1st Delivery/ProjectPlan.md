@@ -42,3 +42,4 @@ Expected Outcome: A validated mobile application model that reduces physical que
 
 ## Scheduling:
 
+[Scheduling](https://github.com/Edwing-Molina/HCI-Sistema-Medico-UADY/blob/main/1st%Delivery/Scheduling.md)

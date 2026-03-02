@@ -31,7 +31,7 @@ To achieve this, the workflow will be executed across four strategic pillars:
 
 - **High-Fidelity Inclusive Prototyping**: We will create visual mockups leveraging UADY’s institutional identity to foster user trust. The design will focus on flat information architecture, oversized touch targets for ease of interaction, and a clear visual hierarchy to enhance legibility.
 
-- **Non-Functional Requirements Audit**: We will evaluate the proposal under strict accessibility standards (WCAG 2.1) for users with diminished vision, as well as technical efficiency to ensure the application performs reliably on mid-to-low-end devices or under unstable network conditions across the campus.
+- **Non-Functional Requirements Audit**: We will evaluate the proposal under strict accessibility standards (WCAG 2.1) for users with diminished vision
 
 Expected Outcome: A validated mobile application model that reduces physical queues, optimizes response times, and guarantees that all UADY beneficiaries—from maintenance staff to senior leadership—can manage their health in a dignified, autonomous, and efficient manner.
 
