@@ -1,4 +1,4 @@
-name: Auto PR to Main (Assigned & Labeled)
+name: Auto PR & Project Sync
 
 on:
   push:
@@ -6,37 +6,30 @@ on:
       - 'main'
 
 jobs:
-  create-pull-request:
+  sync:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Create or Check Pull Request
+      - uses: actions/checkout@v4
+      
+      - name: Create PR and Link Issue
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MY_PROJECT_TOKEN }}
           OWNER: ${{ github.repository_owner }}
         run: |
-          CURRENT_BRANCH=${{ github.ref_name }}
-          LABEL="automated-pr"
+          # 1. Buscar el issue más antiguo en "In Progress" asignado a ti
+          ISSUE_DATA=$(gh issue list --assignee "$OWNER" --state open --json number,title --jq '.[0]')
+          ISSUE_ID=$(echo $ISSUE_DATA | jq -r '.number')
           
-          # Buscamos si ya existe un PR abierto para esta rama
-          PR_EXISTS=$(gh pr list --head "$CURRENT_BRANCH" --base main --json number --jq '.[0].number')
-          
-          if [ -z "$PR_EXISTS" ]; then
-            echo "Creando PR para $CURRENT_BRANCH, asignado a $OWNER con etiqueta $LABEL..."
-            
-            gh pr create \
-              --title "Sync: $CURRENT_BRANCH to main" \
-              --body "PR automático generado por GitHub Actions. Revisión requerida por el dueño del repositorio." \
-              --base main \
-              --head "$CURRENT_BRANCH" \
-              --assignee "$OWNER" \
-              --label "$LABEL"
-          else
-            echo "El PR #$PR_EXISTS ya existe. No se requiere acción adicional."
+          if [ -z "$ISSUE_ID" ] || [ "$ISSUE_ID" == "null" ]; then
+            echo "No hay issues para vincular."
+            exit 0
           fi
+
+          # 2. Crear la PR vinculada (Esto prepara el paso a DONE al mergear)
+          gh pr create \
+            --title "Fix #$ISSUE_ID: $(echo $ISSUE_DATA | jq -r '.title')" \
+            --body "Closes #$ISSUE_ID. \n\nGenerado automáticamente para el proyecto UADY." \
+            --base main \
+            --head "${{ github.ref_name }}" \
+            --assignee "$OWNER" \
+            --label "automated-pr"
