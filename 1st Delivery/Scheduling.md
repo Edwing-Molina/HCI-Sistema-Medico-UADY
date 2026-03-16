@@ -13,3 +13,4 @@ Note: These activities may change or be updated later; to see the completed acti
 | 06 | | Configure an interactive Figma prototype to simulate the real-world experience of managing procedures and dependents. | |
 | 07 | | Evaluate compliance with WCAG 2.1 AA accessibility standards (contrast, font sizes, and click targets). | |
 | 08 | | Conduct a gap analysis of functional requirements based on usability testing to identify missing features, necessary adaptations, or fulfilled criteria. | |
+|09| Edwing| |1|
