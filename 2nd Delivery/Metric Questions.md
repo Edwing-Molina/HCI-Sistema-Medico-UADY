@@ -13,8 +13,7 @@
 | Field                  | Detail                                                                                                    |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | **ID**                 | T-LEARN-01                                                                                                |
-| **Task**               | "Without having used the application before, log in and schedule a General Medicine appointment for tomorrow morning shift" |
-| **Target Persona**     | Don José (primary) + Dra. Elena (secondary)                                                               |
+| **Task**               | "Without having used the application before, log in and schedule a General Medicine appointment for tomorrow morning shift" |                                                             |
 | **Requirements Evaluated** | FR02/FR02b (Login), FR07 (Scheduling), FR08 (Campus filtering)                                        |
 | **Data to Record**     | Start time, end time, whether completed without assistance                                                |
 
@@ -110,12 +109,12 @@
 
 ### 3.1 Test Tasks
 
-| ID       | Task                                                                                        | Target Persona | Requirements Evaluated |
-|----------|---------------------------------------------------------------------------------------------|----------------|------------------------|
-| T-ACC-01 | "Read aloud the information about your next appointment from the screen"                    | Dra. Elena     | NFR-U-01, NFR-U-02     |
-| T-ACC-02 | "Increase the text size from your phone settings and verify the app adapts"                 | Dra. Elena     | NFR-U-01               |
-| T-ACC-03 | "Log in using your employee number (without institutional email)"                           | Don José       | FR02b                  |
-| T-ACC-04 | "From the main screen, find and press the 'Appointments' button"                            | Don José       | NFR-U-03, NFR-U-05     |
+| ID       | Task                                                                        |
+|----------|-----------------------------------------------------------------------------|
+| T-ACC-01 | "Read aloud the information about your next appointment from the screen"    |
+| T-ACC-02 | "Increase the text size from your phone settings and verify the app adapts" |
+| T-ACC-03 | "Log in using your employee number (without institutional email)"           |
+| T-ACC-04 | "From the main screen, find and press the 'Appointments' button"            |
 
 ### 3.2 Post-Task Questions
 
@@ -268,4 +267,5 @@ Apply **at the end of the ENTIRE session**, not after an individual task.
 | NASA-TLX Mental Effort                     | ≤ 3/7             | Average — must be low                                 |
 
 ---
+
 
