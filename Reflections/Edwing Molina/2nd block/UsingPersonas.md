@@ -1,4 +1,4 @@
-Using Personas
+# Using Personas
 
 Throughout the HCI course, we were introduced to the "Personas" method for user-centered design. I believe this method is quite effective when it comes to creating a profile of our target users, allowing us to design apps that truly serve them. This technique, which dates back to the 1990s, is particularly valuable when creating prototypes or even the final UI of an app, as long as the design is focused on the target users and ensures system quality.
 
