@@ -23,81 +23,7 @@ Requesting explicit verification before executing **irreversible or high-impact 
 
 ---
 
-# 2. Evaluation Questions (Checklist)
-
-## a. Ease of Input (Smart Controls)
-
-**Question for the user**
-
-> “When choosing a date or time for an appointment, did you feel that the system made the selection easier, or were you worried about entering something in the wrong format?”
-
-**Objective**
-
-Evaluate whether the use of **pickers or selectors** eliminated the cognitive load of remembering formats (e.g., **DD/MM/YYYY**) and whether the user perceived that assistance.
-
----
-
-## b. Real-Time Guidance
-
-**Questions for the user**
-
-> “While selecting the appointment data or date, did you notice whether the system guided you or whether you felt restricted in what you could type?”
-
-> “Did that make you feel more confident about the information you were entering?”
-
-**Objective**
-
-Determine whether **dropdown menus** are perceived as a **visual and restrictive aid** that prevents errors before pressing **Submit**.
-
----
-
-## c. Validation of Sensitive Data (Outlier Values)
-
-**Questions for the user**
-
-> “If, due to distraction, you entered data or a value that does not make sense, would you expect the application to stop you?”
-
-> “What type of notification would make you feel that the system is protecting you rather than simply reprimanding you?”
-
-**Objective**
-
-Explore the user’s **trust in the system’s intelligence** to detect logical errors that could be dangerous in a **healthcare context**.
-
----
-
-## d. Irreversible Actions (Step Confirmation)
-
-**Questions for the user**
-
-> “When trying to delete a record or cancel an appointment, did you feel that the process was too fast, or that the system ensured you truly wanted to do it?”
-
-> “Was the confirmation request clear to you?”
-
-**Objective**
-
-Validate whether **confirmation dialogs** are perceived as **necessary protection** or as an **unnecessary obstacle**.
-
----
-
-## e. Autonomy in Problem Resolution (Avoiding Dependency)
-
-**Questions for the user**
-
-> “If the system shows you an error, do you feel it provides clear clues to fix it yourself, or do you feel the need to ask someone else how to proceed?”
-
-> “When the issue occurred, did you quickly see how to return to the previous state, or did you feel ‘stuck’ on a screen without knowing which button to press?”
-
-> “Was it easy to identify exactly which data or action caused the problem, or did you have to review the entire screen to guess what was wrong?”
-
-> “Did the message displayed on screen make you feel that the system was guiding you toward a solution, or did you feel that it simply stopped you without explaining how to move forward?”
-
-**Objective**
-
-Evaluate whether **error messages are informative enough** and whether the **visual feedback** helps the user recover without depending on **technical support** or external assistance.
-
----
-
-# 3. Metrics
+# 2. Metrics
 
 These metrics provide an **objective view of how safe the design is**, especially in critical environments such as a **medical application**.
 
@@ -121,6 +47,13 @@ Through **moderated or recorded usability testing**, counting incorrect actions 
 $$
 ERT = \frac{E_{total}}{T_{completed}}
 $$
+
+## Questions for Evidence Analysis
+
+- **Misclick Frequency:** How many times did the user click on non-interactive elements or inactive areas?
+- **Format Errors:** How many times did the system reject an input for any reason?
+- **Navigation Errors:** How many times did the user deviate from the logical workflow and have to return to the starting point?
+- **Error Repetition:** Did the user commit the same error more than once within the same task?
 
 ## Required Numerical Values
 
@@ -158,6 +91,13 @@ Classifying each detected error during testing on a **scale from 1 to 4**.
 $$
 ESI = \sum (n_i \times w_i)
 $$
+
+## Questions for Evidence Analysis
+
+- **Data Integrity:** Did the error allow information to be saved that could lead to an incorrect appointment? (Level: Catastrophic – 4)
+- **Workflow Blockage:** Did the error force the user to restart the application or lose all task progress? (Level: Critical – 3)
+- **Operational Obstacle:** Did the error create confusion that required more than three attempts to correct? (Level: Moderate – 2)
+- **Cosmetic Error:** Was the error purely visual and did not affect data accuracy? (Level: Minor – 1)
 
 ## Required Numerical Values
 
@@ -203,6 +143,12 @@ $$
 AIR = \frac{A_{int}}{P_{total}}
 $$
 
+## Questions for Evidence Analysis
+
+- **Confirmation Alerts:** How many “Confirm Action” modal windows appeared during the workflow?
+- **Validation Interruptions:** How many error dialogs blocked the screen during the process?
+- **User Behavior:** Was it observed that the user quickly closed alerts without reading them (click blindness)?
+
 ## Required Numerical Values
 
 - $A_{int}$: Number of alerts or confirmation dialogs  
@@ -234,6 +180,15 @@ Observe how many errors users correct themselves after receiving **error message
 $$
 SRR = \left( \frac{E_{corr}}{E_{total}} \right) \times 100
 $$
+
+## Questions for Evidence Analysis
+
+- **Message Effectiveness:** Did the error message indicate exactly where the failure occurred and how to fix it?
+- **First-Attempt Correction:** After seeing the error, did the user correct the data correctly in their next action?
+- **Use of Reversal Functions:** Did the user successfully use “Undo” or “Cancel” buttons to revert an error?
+- **Help Request:** Did the user verbalize a question or directly ask the evaluator how to proceed?
+- **State of Paralysis:** Was there a pause of inactivity longer than 30 seconds after an error message?
+- **Use of Manuals:** Did the user attempt to seek help in external documentation or FAQ sections?
 
 ## Required Numerical Values
 
