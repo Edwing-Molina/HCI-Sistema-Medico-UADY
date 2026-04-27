@@ -1,6 +1,4 @@
-Aquí tienes la propuesta de métricas para el atributo de **Accesibilidad**, adaptada estrictamente al formato que solicitaste y enfocada en los requisitos de tu app para el personal de la **UADY**.
-
----
+# Accesibility Metrics Examples
 
 ## 1. Detailed Description of the Attribute
 
@@ -25,8 +23,6 @@ Reducing the mental effort required to understand the interface and its messages
 ---
 
 # 2. Metrics
-
-Estas métricas permiten medir de forma objetiva el nivel de inclusión de la app, separando lo que puede auditarse automáticamente de lo que requiere validación con el personal de la universidad.
 
 # A. Contrast Compliance Ratio (CCR) - [Automatic]
 
