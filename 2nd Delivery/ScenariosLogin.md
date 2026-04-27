@@ -87,8 +87,8 @@ Recovery: Do they complete the missing information without assistance?
 
 # 2. Attribute: Accessibility
 
-
 ### *Revisar*
+
 ## Scenario: Interface Scaling for Older Adults
 
 Context:  
