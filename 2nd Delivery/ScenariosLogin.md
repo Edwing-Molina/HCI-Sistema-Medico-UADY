@@ -7,7 +7,7 @@
 ## Scenario: Email Format Validation
 
 Context:  
-A hospital administrative worker attempts to log into the system but accidentally types their institutional email incorrectly.
+An administrative worker attempts to log into the system but accidentally types their institutional email incorrectly.
 
 Source: End user (new).
 
@@ -66,7 +66,7 @@ A distracted user attempts to log in without completing the required fields.
 Source: End user.
 
 Stimulus:  
-The user presses the "Login" button while one or both input fields are empty.
+The user presses the "Next" button while input fields are empty.
 
 Artifact: Login form validation system.
 
@@ -85,33 +85,10 @@ Recovery: Do they complete the missing information without assistance?
 
 ---
 
-## Scenario: Network Interruption During Login
-
-Context:  
-A user attempts to log in while walking through a hospital corridor with unstable Wi-Fi connectivity.
-
-Source: External environment (network).
-
-Stimulus:  
-The internet connection is lost during the login request.
-
-Artifact: Authentication request process.
-
-Environment: Low connectivity or temporary network interruption.
-
-Response:  
-The system displays a clear message indicating that the connection was lost and allows the user to retry without clearing previously entered data.
-
-Metrics:
-
-Recovery: Do users attempt to retry the login process?
-
-Data Persistence: Are the email and password fields preserved after the connection error?
-
----
-
 # 2. Attribute: Accessibility
 
+
+### *Revisar*
 ## Scenario: Interface Scaling for Older Adults
 
 Context:  
@@ -194,7 +171,7 @@ Efficiency: Time required to complete the login using keyboard interaction.
 ## Scenario: Login Flow Recognition
 
 Context:  
-Don José opens the application for the first time and wants to access his account.
+A manual worker opens the application for the first time and wants to access his account.
 
 Source: New user.
 
@@ -275,7 +252,7 @@ User Reaction: Do they appear confused while editing the password?
 ## Scenario: Session Persistence
 
 Context:  
-A hospital employee opens the application again shortly after previously logging in.
+An employee opens the application again shortly after previously logging in.
 
 Source: Returning user.
 
