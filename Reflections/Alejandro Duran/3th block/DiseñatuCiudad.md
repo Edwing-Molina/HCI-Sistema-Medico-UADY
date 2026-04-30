@@ -9,6 +9,7 @@ What became most clear to me that day is that it doesn’t matter how advanced a
 
 **Data (Evidence):**  
 Several situations made this evident:
+
 - **Address confusion:** Families arrived excited with their QR codes, only to discover they couldn’t vote for projects in their area. Because they lived on the boundary between two districts, the system assigned them to a different one with completely unrelated options. They left feeling disappointed.
 - **Hidden website interface:** Many users struggled just to find where to register. When they finally accessed the site, a large “Design Your City” logo covered most of the screen, making it seem like the page hadn’t loaded. The actual button to upload their ID was hidden below, requiring scrolling—something that wasn’t obvious at all.  
 - **Technical issues with equipment:** Government staff also faced difficulties. The laptops had trouble scanning QR codes with their cameras, slowing everything down. Even they mentioned it would have been easier to manually input names or ID numbers instead of relying on the camera.  
@@ -33,6 +34,7 @@ A moment that stayed with me was when an elderly woman approached, genuinely wan
 Because the application strictly limited voting options based on the address on her ID, she was shown a list of projects from an area she didn’t even recognize. She told me she felt completely lost, and in the end, she chose options at random just to move forward. Watching her leave with the feeling that her vote wouldn’t help improve her real neighborhood was discouraging.
 
 If I were to redesign this system—or apply these lessons to a project like a medical services app—I would focus on three key improvements:
+
 1. **Make critical actions visible:** The first thing users should see is what they need to do, not decorative elements like oversized logos.  
 2. **Allow flexibility in interaction:** If one method fails (like scanning a QR code), users should have alternative options, such as manual input.  
 3. **Use visual aids instead of dense text:** Instead of long lists, interfaces should include visual tools (like maps or icons) to help users quickly understand information.  

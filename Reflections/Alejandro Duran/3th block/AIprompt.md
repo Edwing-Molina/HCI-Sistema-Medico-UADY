@@ -1,44 +1,52 @@
-# Reflection: AI as a Task Architect in Usability Testing
+# Reflection: AI as the Architect of Our Testing Protocol Plan
 
-**Core Idea: AI can significantly accelerate usability task design, but it must be combined with human insight to ensure contextual accuracy and relevance.**
+**Core Idea: AI can transform the way testing protocols are built by enabling comprehensive, structured, and scalable design—provided it is guided by clear human intent and well-defined quality attributes.**
 
 ## Reflection
 
 **Claim (Main Argument):**  
-Using AI to design usability tasks works as a kind of “cognitive scaffold” that drastically reduces the time spent on drafting. However, it requires a **hybrid strategy**, because AI lacks the institutional and contextual nuance—such as UADY-specific medical processes—that a human team can provide.
+Using AI to build the entire testing plan, using scenarios to writing the full usability testing protocol—felt like shifting from manual construction to using automatic tool. It allowed us to cover five quality attributes (Usability, Accessibility, Efficiency, Learnability, and Reliability) simultaneously, something that would have taken days to organize manually without missing important details.
 
 **Data (Evidence):**  
-In our Medical Services App project, manually designing 5–7 usability tasks as a team took around **2 to 3 hours**, mainly due to discussions about wording, task order, and avoiding bias. In contrast, using an AI tool allowed us to generate a similar set of tasks in about **30 to 60 seconds**.  
-That said, the AI-generated output was not immediately usable—it required an additional **10–15 minutes of refinement** to align with real constraints, such as institutional email logins and specific clinic workflows at UADY.
+If done manually, designing scenarios for five different attributes would have required hours of discussion just to decide what to test. Instead, we used a **chained prompt approach**: first generating scenarios, then using those as the foundation for the full testing protocol.  
+What would normally take days of meetings was reduced to a single afternoon of refining prompts. Around **90% of the heavy drafting work** was completed by AI in seconds, leaving the team to focus only on adjustments and validation.
 
 **Warrant (Reasoning):**  
-The effectiveness of AI-generated tasks depends heavily on the **contextual density of the prompt**. When we provide clear inputs—like the app’s Information Architecture and the usability attribute (e.g., Learnability)—AI can simulate common user navigation paths through pattern recognition. However, while AI is strong at covering standard flows, human designers are better at identifying **edge cases** that reflect real local users and scenarios.
+The effectiveness of this process lies in the **connection between prompts and outputs**. By explicitly defining the five quality attributes, the AI was able to generate a protocol that evaluates not only usability cases, but also deeper aspects like efficiency and accessibility . In this sense, the prompt acts as a translator and more complete about all the needing of the program, turning abstract concepts into testing instructions.
 
 **Backing (Additional Support):**  
-According to HCI principles, usability tasks should be **action-oriented and non-directive**. AI performs very well at following these linguistic rules, often avoiding common mistakes such as leading instructions (“click the blue button”), which human teams sometimes overlook. By delegating the structural drafting to AI, the team can focus more on validating whether the tasks truly measure what they are supposed to measure.
+One major advantage of using AI is **consistency**. Human-written protocols often vary in depth and quality across sections, but AI maintained a uniform level of rigor across all five attributes. Additionally, it helped ensure that the testing language remained neutral, avoiding unintentional bias or guidance that could influence user behavior during testing.
 
 **Qualifier (Limitations):**  
-This AI-driven approach works best when the project already has clearly defined elements, such as personas and an Information Architecture map. In early-stage projects where requirements are still unclear, manual brainstorming is more effective for discovering what should be tested in the first place.
+This approach only works effectively if the inputs are well-defined. Without clearly specifying the five quality attributes from the start, the AI would produce a generic and less useful protocol. The tool is powerful, but it depends entirely on the clarity and direction provided by the team.
 
 **Rebuttal (Counterargument):**  
-Some may argue that manual task design is always better because it promotes team alignment. However, relying solely on manual work in fast-paced environments often leads to rushed or lower-quality results. Using AI to generate an initial draft gives the team a concrete starting point, which actually improves collaboration and leads to stronger final outcomes.
+Some may argue that automating protocol creation removes the “human element” from usability testing. However, the opposite can be true: by delegating the documentation and structuring tasks to AI, the team gains more time to focus on observing real users, understanding their struggles, and interpreting their emotions—arguably the most human part of the process.
 
 ## Team Project Example: Medical Services App
 
-In our project, the most effective strategy was combining both approaches:  
-- **AI for breadth:** generating multiple possible usability tasks quickly.
-- **Manual work for depth:** refining, contextualizing, and selecting the most relevant tasks.  
+In our project, we implemented a **chained prompt workflow**:
 
-For example, we used a structured prompt based on a **hierarchical Information Architecture** (Home > Specialty > Doctor > Appointment) and focused on the usability attribute of **Learnability**. The AI-generated tasks helped us quickly cover common user flows, while the team refined them to reflect real constraints, such as UADY-specific login methods and user behaviors.
+1. **Scenario generation:**  
+   We asked AI to create realistic and challenging situations for each of the five attributes (Usability, Accessibility, Efficiency, Learnability, Reliability).  
+   For example: *“A user that needs to book an urgent appointment in low-light conditions and has forgotten her glasses.”* This scenario simultaneously evaluates accessibility and efficiency.
 
-This hybrid approach not only saved time but also improved the overall quality of our usability testing design. Instead of starting from scratch, we started from a draft that we could critique and adapt.
+2. **Protocol generation:**  
+   Using those scenarios, we prompted the AI to build a complete usability testing protocol, including facilitator instructions, user tasks, and measurable metrics.
 
-Ultimately, the key insight is that AI should not replace human judgment but **augment it**—handling speed and structure, while humans ensure relevance and accuracy.
+As a result, our testing plan went beyond simple step-by-step instructions. It evaluated whether our user could:
+- Complete a task within a specific time frame (Efficiency),  
+- Understand icons without reading labels (Learnability),  
+- Successfully navigate under constrained conditions (Accessibility).  
+
+This approach gave us a **holistic testing framework** that covered multiple angles at once—something that would have been difficult and time-consuming to achieve manually.
+
+Ultimately, the AI-generated protocol served as a structured foundation, while the team ensured its relevance and alignment with the real context of a UADY medical services application.
 
 ---
 
 ## References
 
-- Human-Computer Interaction (HCI) principles on usability testing  
+- Human-Computer Interaction (HCI) principles on usability and testing  
 - Interaction Design Foundation (iXDF) guidelines  
-- Project experience with AI-assisted usability task generation
+- Project experience using AI for scenario and protocol generation
