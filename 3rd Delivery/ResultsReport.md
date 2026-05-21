@@ -1,782 +1,885 @@
-# REPORTE FINAL DE RESULTADOS
-## Evaluación de Usabilidad del Sistema de Citas Médicas UADY
-### Tercera Entrega - Prueba de Usabilidad
+## Project Results and Progress Report
 
----
+### 1. Summary
 
-## INFORMACIÓN DEL PROYECTO
+This report includes the conclusions of the usability tests applied to the UADY medical service app project, as well as the process through which we moved from having only functional requirements and no non-functional requirements before the project development. During the project, we applied the User-Centered Design (UCD) methodology to evaluate the usability of the application.
 
-| Campo | Valor |
+### 2. User-Centered Design (UCD) Methodology
+
+In the project, we used the following User-Centered Design (UCD) techniques:
+
+#### **Applied Research Techniques:**
+
+- During the project development, we used the Personas technique to better understand the needs of our users. In our case, these were synthetic personas created with AI, and we aimed to create two groups of users (Manual workers and users aged 45–55).
+- Key finding: With this technique, we identified which users would most likely use the app and what characteristics they might have based on the group they belonged to.
+
+#### **Design and Prototyping Techniques:**
+
+- In our case, we did not use any design or prototyping techniques because the application was already developed.
+
+#### **Usability Evaluation Techniques:**
+
+- We used usability testing and applied the SUS questionnaire to evaluate the quality attributes we defined.
+
+### 3. Status and Progress by Stages
+
+#### **Stage 1: Discovery and Requirements**
+
+- In the first stage, we identified non-functional requirements and applied the Personas technique to better understand our users.
+- Deliverables: [FR & NFR](/1st%20Delivery/Requeriments.md) and [Personas](/1st%20Delivery/Personas.md)
+
+#### **Stage 2: Identification of Metrics and Quality Attributes (Usability)**
+
+- At this stage, since we did not perform prototyping because the application was already completed, we had to move ahead to the next delivery. Therefore, we identified usability quality attributes and some metrics that helped us analyze what we were going to measure and which metrics were more appropriate. At this point, many adjustments were made regarding which metrics would be used, and based on that, the quality scenarios for the usability tests conducted in the next stage began to be planned.
+- Deliverables: [Quality Attributes v1](/2nd%20Delivery/Usability_Attributes.md)  
+  - Metrics:
+[Accessibility](/2nd%20Delivery/Metrics/AccesibilityMetrics.md)
+[Operability](/2nd%20Delivery/Metrics/Operability.md)
+[Satisfaction](/2nd%20Delivery/Metrics/SatisfactionMetrics.md)
+[UserErrorProtection](/2nd%20Delivery/Metrics/UserErrorProtection.md)
+
+- As a result, we obtained well-defined quality attributes and a clearer idea of the metrics we could use: [Final Quality Attributes](/2nd%20Delivery/UsabilityAtributes2ndVersion.md)
+
+#### **Stage 3: Scenarios, Usability Tests, and Results**
+
+- In this final stage, we clearly defined the scenarios to evaluate, which were the login process and appointment scheduling. Metrics and tasks were assigned based on the attributes and modules being evaluated. Then, a testing protocol was created to guide the usability tests and ensure that everything went smoothly, along with forms to make the usability testing process more dynamic and faster due to limited time. A participant profile form was also created to identify characteristics of the people who participated in the tests. Finally, evidence such as videos and forms were analyzed, and the results report was prepared.
+- Deliverables: [Login Scenarios](/2nd%20Delivery/ScenariosLogin.md), [Appointments Scenarios](/2nd%20Delivery/ScenariosCitas.md), [Testing Protocol](/3rd%20Delivery/TestProtocol.md), [Test Results](/3rd%20Delivery/PersonasAnalysis), [Profile Form](https://forms.gle/RqNNvyqtEQ32J2kz8), [Testing Form](https://forms.gle/4PnoGBmzh3xp19SGA), [SUS Form](https://forms.gle/mEv1rBw8nxUermwg6)
+
+## Team Activity Distribution
+
+The work distribution and weighting are described in the following document:
+
+[Scheduling Activities](/3rd%20Delivery/SchedulingActivities.md)
+
+## Usability Test Results
+
+| Field | Value |
 |---|---|
-| **Institución** | Universidad Autónoma de Yucatán (UADY) |
-| **Sistema Evaluado** | Módulo de Citas Médicas - Aplicacion Primer Despliegue (Prototipo Funcional) |
-| **Módulos Probados** | Login y Agendamiento de Citas |
-| **Período de Evaluación** | Mayo 2026 |
-| **Método de Evaluación** | Prueba de Usabilidad Moderated |
-| **Participantes Totales** | 8 usuarios |
-| **Población Objetivo** | Personal de Mantenimiento, Limpieza y Administrativo de UADY |
+| **Institution** | Autonomous University of Yucatán (UADY) |
+| **Evaluated System** | Medical Appointment Module - Functional Application |
+| **Tested Modules** | Login and Appointment Scheduling |
+| **Evaluation Method** | Usability Testing |
+| **Total Participants** | 8 users |
+| **Target Population** | Maintenance, Cleaning, and Administrative Staff of UADY |
 
----
+### 1.1 Methodology
 
-## SECCIÓN 1: RESULTADOS DEL TEST DE USABILIDAD
+Usability tests were conducted following the **Testing Protocol** established in the project documentation. The protocol included:
 
-### 1.1 Metodología
+- **Login Tasks (2 tasks):** Credential validation, error handling, session persistence
+- **Appointment Tasks (7 tasks):** Appointment booking, appointment search, modifications, cancellation
+- **Post-Evaluation:** System Usability Scale (SUS) with 10 questions plus 4 qualitative questions
 
-Se realizaron pruebas de usabilidad siguiendo el **Testing Protocol** establecido en la documentación del proyecto. El protocolo incluía:
+**Population Divided into Two Demographic Groups:**
 
-- **Tareas de Login (2 tareas):** Validación de credenciales, manejo de errores, persistencia de sesión
-- **Tareas de Appointments (7 tareas):** Agendamiento, búsqueda de citas, modificaciones, cancelación
-- **Evaluación Posterior:** Sistema de Usabilidad (SUS) con 10 preguntas más 4 preguntas cualitativas
+- Group A (Manual Workers/Younger): Ages 35–45, variable digital proficiency
+- Group B (Older Adults): Ages 45–55, low digital proficiency, possible family dependence
 
-**Población Dividida en Dos Grupos Demográficos:**
-- Grupo A (Manuales/Jóvenes): Edad 35-45 años, proficiencia digital variable
-- Grupo B (Mayores): Edad 45-55 años, baja proficiencia digital, posible dependencia familiar
+### 1.2 Global Quantitative Results
 
-### 1.2 Resultados Cuantitativos Globales
+#### System Usability Scale (SUS) - Population Comparison
 
-#### Sistema de Usabilidad Scale (SUS) - Comparativo Poblacional
-
-| Métrica | Grupo A (Manuales) | Grupo B (Mayores) | Diferencia |
+| Metric | Group A (Manual Workers) | Group B (Older Adults) | Difference |
 |---|---|---|---|
-| **Score SUS Promedio** | 77.5 / 100 | 70.0 / 100 | -7.5 puntos |
-| **Rango de Scores** | 40.0 - 100.0 | 68.0 - 75.0 | Amplitud mayor en A |
-| **Desviación Estándar** | ±23.6 | ±3.2 | Mucho más consistente en B |
-| **Categoría Usabilidad** | Good (Aceptable) | Marginal (Apenas aceptable) | |
-| **% sobre umbral (80)** | No alcanza | No alcanza | Ambos bajo |
+| **Average SUS Score** | 77.5 / 100 | 70.0 / 100 | -7.5 points |
+| **Score Range** | 40.0 - 100.0 | 68.0 - 75.0 | Greater variability in A |
+| **Standard Deviation** | ±23.6 | ±3.2 | Much more consistent in B |
+| **Usability Category** | Good (Acceptable) | Marginal (Barely acceptable) | |
+| **% above threshold (80)** | Not achieved | Not achieved | Both below |
 
-**Interpretación:**
-- Ambos grupos están **por debajo del umbral de 80 puntos** (estándar industrial mínimo)
-- Grupo A tiene mayor **variabilidad** (algunos usuarios muy satisfechos, otros muy frustrados)
-- Grupo B tiene mayor **consistencia** (uniformemente moderadamente satisfechos)
-- La diferencia sugiere que el rango de edad y experiencia digital impacta significativamente
+**Interpretation:**
 
-#### Métricas de Tarea por Módulo
+- Both groups are **below the 80-point threshold** (minimum industry standard)
+- Group A shows greater **variability** (some users very satisfied, others very frustrated)
+- Group B shows greater **consistency** (uniformly moderately satisfied)
+- The difference suggests that age range and digital experience significantly impact usability
 
-**Módulo LOGIN:**
+#### Task Metrics by Module
 
-| Métrica | Grupo A | Grupo B |
+**LOGIN:**
+
+| Metric | Group A | Group B |
 |---|---|---|
-| Tasa de Completación | 100% (4/4) | 100% (4/4) |
-| Clicks Promedio | 7.3 | 6.1 |
-| Preguntas Promedio | 0.75 | 0.625 |
-| Errores Promedio | 2.5 | 1.625 |
-| Necesidad de Asistencia | 25% (1 usuario) | 25% (1 usuario - Grazielita) |
+| Completion Rate | 100% (4/4) | 100% (4/4) |
+| Average Clicks | 7.3 | 6.1 |
+| Average Questions | 0.75 | 0.625 |
+| Average Errors | 2.5 | 1.625 |
+| Assistance Required | 25% (1 user) | 25% (1 user - Grazielita) |
 
-**Módulo APPOINTMENTS:**
+**APPOINTMENTS:**
 
-| Métrica | Grupo A | Grupo B |
+| Metric | Group A | Group B |
 |---|---|---|
-| Tasa de Completación | 98% (27/28 tareas) | 93% (14/15 tareas*) |
-| Clicks Promedio | 3.8 | 4.1 |
-| Preguntas Promedio | 0.3 | 0.4 |
-| Errores Promedio | 0.4 | 0.6 |
-| Tasa de Abandono Navegacional | 50-80% en búsqueda de detalles | 50-80% en búsqueda de detalles |
+| Completion Rate | 98% (27/28 tasks) | 93% (14/15 tasks*) |
+| Average Clicks | 3.8 | 4.1 |
+| Average Questions | 0.3 | 0.4 |
+| Average Errors | 0.4 | 0.6 |
+| Navigational Abandonment Rate | 50-80% while searching for details | 50-80% while searching for details |
 
-*Grupo B: 1 error de sistema (no es responsabilidad del usuario) en cancelación de dependiente
+*Group B: 1 system error (not the user's responsibility) during dependent cancellation.
 
-**Hallazgo Crítico:** Appointments es **más exitoso que Login** en ambos grupos, pero presenta fricción común en la navegación post-agendamiento.
+**Critical Finding:** The Appointments module is **more successful than Login** in both groups, but it presents common friction in post-booking navigation.
 
-### 1.3 Resultados Cualitativos
+## Comparative Analysis
 
-#### Grupo A (Manuales/Jóvenes - 35-45 años)
+### 2.1 Comparison of General Metrics
 
-**Desempeño Observado:**
+#### Comparative Summary Table
 
-| Usuario | Rol | SUS | Fricción Principal | Satisfacción General |
+| Aspect | Group A (Manual Workers) | Group B (Older Adults) | Difference | Probable Cause |
 |---|---|---|---|---|
-| Usuario 1 | Administrativo | 100.0 | Ninguna | Muy Satisfecho |
-| Usuario 2 | Limpieza | 97.5 | Mínima | Muy Satisfecho |
-| Usuario 3 | Mantenimiento | 72.5 | Búsqueda de detalles | Moderadamente Satisfecho |
-| Usuario 4 | Administrativo | 40.0 | Login + Navegación | Insatisfecho |
-
-**Características Observadas:**
-- **Motivación Alta:** Todos confirmaron usar la app frecuentemente (necesidad de mejorar sistema actual)
-- **Problemas Visuales:** 75% reporta usar lentes o tener que aumentar tamaño de fuente
-- **Frustraciones Principales:**
-  1. Login con teclado virtual
-  2. Encontrar citas agendadas (abandono navegacional 50-80%)
-  3. Comprensión de términos como "Requested" vs "Scheduled"
-- **Fortalezas:**
-  - Trust en branding UADY + Microsoft SSO
-  - Comprensión fluida del flujo progresivo de agendamiento
-  - Aceptación de reglas de negocio (no se puede agendar en pasado)
-
-**Patrón Crítico:** La gran variación en SUS (40-100) indica que **el sistema funciona para usuarios con alta competencia digital**, pero es **inaceptable para quienes dependen de familia** para tareas tecnológicas.
-
-#### Grupo B (Mayores - 45-55 años)
-
-**Desempeño Observado:**
-
-| Usuario | Rol | SUS Estimado | Fricción Principal | Satisfacción General |
-|---|---|---|---|---|
-| Grazielita May | Administrativo | 68 | Teclado virtual + Miedo a explorar | Moderadamente Satisfecho |
-| Elda Becerra | Limpieza | 70 | Navegación post-agendamiento | Moderadamente Satisfecho |
-| Verónica Ortega | Mantenimiento | 72 | Ninguna significativa | Satisfecho |
-| Alejandro Coba | Administrativo | 70* | Error del sistema en Task 7 | Moderadamente Satisfecho |
-
-*SUS estimado; error del sistema en prueba
-
-**Características Observadas:**
-- **Dependencia Reportada:** 50% (Grazielita y Elda) menciona depender de familia para tareas digitales
-- **Miedo a Exploración:** Resistencia a hacer clic en botones desconocidos; piden confirmación
-- **Fortalezas:**
-  - Confianza alta en branding UADY + integración Microsoft
-  - Comprensión perfecta de reglas de negocio
-  - Paciencia con loading states (no hacen clic repetido)
-  - Aceptación de restricciones del sistema
-- **Debilidades:**
-  - Teclado virtual es barrera severa (especialmente Grazielita - requirió asistencia)
-  - Fricción significativa en encontrar detalles de citas
-  - 2 participantes mostraron inseguridad general con interfaz
-  - Precisión motora reducida (Grazielita: 5 clics accidentales)
-
-**Patrón Consistente:** Mayor consistencia que Grupo A, pero SUS uniformemente bajo (68-72).
-
----
-
-## SECCIÓN 2: ANÁLISIS COMPARATIVO ENTRE POBLACIONES
-
-### 2.1 Comparativa de Métricas Generales
-
-#### Tabla Síntesis Comparativa
-
-| Aspecto | Grupo A (Manuales) | Grupo B (Mayores) | Diferencia | Causa Probable |
-|---|---|---|---|---|
-| **SUS Promedio** | 77.5 | 70.0 | -7.5 | Edad + Competencia Digital |
-| **Variabilidad (SD)** | ±23.6 | ±3.2 | Grupo A +620% | Grupo A tiene extremos (40-100) |
-| **Clicks en Login** | 7.3 | 6.1 | A usa +1.2 clicks | Más intentos en A |
-| **Errores en Login** | 2.5 | 1.625 | A: +0.875 errores | Más frustración en A → más errores |
-| **Clicks en Appointments** | 3.8 | 4.1 | B usa +0.3 clicks | Similar; trivial |
-| **Errores en Appointments** | 0.4 | 0.6 | B tiene +0.2 errores | Diferencia pequeña |
-| **Tasa de Abandono (Post-Cita)** | 50-80% | 50-80% | **IGUAL** | Problema de IA común |
-| **Completación Global** | 98% | 93% | A: +5% | Error de sistema en B |
-
-**Conclusión Principal:** Ambos grupos comparten problemas similares (login, navegación post-agendamiento), pero **el Grupo B enfrenta fricción adicional** relacionada con edad y experiencia digital.
-
-### 2.2 Análisis Factorial: Edad vs. Competencia Digital
-
-#### Impacto de la Edad
-
-**Evidencia Cuantitativa:**
-- Clicks en Login: Grupo A (7.3) vs Grupo B (6.1) → **Edad NO es predictor de clicks**
-- Errores: Grupo A (2.5) vs Grupo B (1.625) → **Edad NO correlaciona con más errores**
-- SUS: Grupo A (77.5) vs Grupo B (70.0) → **Sí hay diferencia, pero modesta (-7.5)**
-
-**Evidencia Cualitativa:**
-- Verónica y Alejandro (mayores) tuvieron desempeño comparable a usuarios jóvenes digitalmente competentes
-- Grazielita (mayor con baja competencia) tuvo peor desempeño que Usuario 4 de Grupo A
-- **Conclusión:** La edad **no es el factor determinante** por sí sola
+| **Average SUS** | 77.5 | 70.0 | -7.5 | Age + Digital Competence |
+| **Variability (SD)** | ±23.6 | ±3.2 | Group A +620% | Group A has extremes (40-100) |
+| **Clicks in Login** | 7.3 | 6.1 | A uses +1.2 clicks | More attempts in A |
+| **Errors in Login** | 2.5 | 1.625 | A: +0.875 errors | More frustration in A → more errors |
+| **Clicks in Appointments** | 3.8 | 4.1 | B uses +0.3 clicks | Similar; trivial |
+| **Errors in Appointments** | 0.4 | 0.6 | B has +0.2 errors | Small difference |
+| **Abandonment Rate (Post-Appointment)** | 50-80% | 50-80% | **SAME** | Common IA problem |
+| **Global Completion** | 98% | 93% | A: +5% | System error in B |
 
-#### Impacto de la Competencia Digital
+**Main Conclusion:** Both groups share similar problems (login, post-booking navigation), but **Group B faces additional friction** related to age and digital experience.
 
-**Evidencia Cuantitativa:**
-- Usuario de Grupo A con baja competencia (SUS 40) vs Grazielita (SUS 68) → **Baja competencia impacta más**
-- Alejandro (mayor, competencia moderada-alta): 4 errores → comparado con Usuario 1 (joven): 0 errores
-- Grazielita (mayor, competencia muy baja): 22 errores → vs Verónica (mayor, competencia moderada): 3 errores
+### 2.2 Factorial Analysis: Age vs. Digital Competence
 
-**Evidencia Cualitativa:**
-- Grazielita expresó explícitamente miedo a hacer clic y dependencia familiar
-- Usuario 4 (Grupo A, SUS 40) mostró frustración similar
-- Verónica y Alejandro (ambos mayores pero competentes) navegaron sin fricción
+#### Impact of Age
 
-**Conclusión Definitiva:** 
-$$\text{Desempeño} = f(\text{Competencia Digital}, \text{Experiencia Previa}) >> \text{Edad}$$
+**Quantitative Evidence:**
 
-**La edad es correlato, no causa.** La verdadera variable es la **competencia digital y familiaridad con interfaces móviles**.
+- Login Clicks: Group A (7.3) vs Group B (6.1) → **Age is NOT a predictor of clicks**
+- Errors: Group A (2.5) vs Group B (1.625) → **Age does NOT correlate with more errors**
+- SUS: Group A (77.5) vs Group B (70.0) → **There is a difference, but modest (-7.5)**
 
-### 2.3 Fortalezas Compartidas (Ambos Grupos)
+**Qualitative Evidence:**
 
-#### 1. **Trust en Branding Institucional**
-- **Ambos grupos:** Alta confianza en UADY + Microsoft SSO
-- **Impacto:** Compensa fricción en otras áreas
-- **Implicación:** Invertir en branding es inversión en UX
+- Verónica and Alejandro (older adults) performed comparably to digitally competent younger users
+- Grazielita (older adult with low competence) performed worse than User 4 from Group A
+- **Conclusion:** Age **is not the determining factor** by itself
 
-#### 2. **Aceptación de Reglas de Negocio**
-- **Ambos grupos:** Entienden inmediatamente por qué no pueden agendar en pasado
-- **Ambos grupos:** No hacen clic repetido en botones deshabilitados
-- **Impacto:** No hay confusión sobre restricciones del sistema
-- **Implicación:** Business logic es intuitiva; no requiere cambios
+#### Impact of Digital Competence
 
-#### 3. **Paciencia con Loading States**
-- **Ambos grupos:** 0% de clic repetido mientras carga
-- **Ambos grupos:** Esperan pacientemente
-- **Impacto:** Indicador de carga es efectivo
-- **Implicación:** Loading state es bien diseñado
+**Quantitative Evidence:**
 
-### 2.4 Problemas Comunes (Ambos Grupos)
+- Group A user with low competence (SUS 40) vs Grazielita (SUS 68) → **Low competence has greater impact**
+- Alejandro (older adult, moderate-high competence): 4 errors → compared with User 1 (young): 0 errors
+- Grazielita (older adult, very low competence): 22 errors → vs Verónica (older adult, moderate competence): 3 errors
 
-#### 1. **Login = Barrera de Entrada Crítica**
-- **Grupo A:** 25% requirió asistencia (Usuario 4)
-- **Grupo B:** 25% requirió asistencia (Grazielita)
-- **Problema Raíz:** Teclado virtual + contraseñas complejas
-- **Impacto en Proyecto:** Reduce tasa de adopción
+**Qualitative Evidence:**
 
-#### 2. **Fricción Post-Agendamiento (50-80% Abandono)**
-- **Grupo A:** Usuarios se pierden buscando detalles de citas
-- **Grupo B:** Exactamente el mismo patrón
-- **Problema Raíz:** Information Architecture confusa en sección de citas
-- **Impacto en Proyecto:** Usuarios completan agendamiento pero no validan éxito
+- Grazielita explicitly expressed fear of clicking and family dependence
+- User 4 (Group A, SUS 40) showed similar frustration
+- Verónica and Alejandro (both older but competent) navigated without friction
 
-#### 3. **Falta de Claridad en Estados de Transacción**
-- **Ambos grupos:** No entienden inmediatamente qué significa "Requested" vs "Scheduled"
-- **Ambos grupos:** Hacen preguntas de validación ("¿Se guardó?")
-- **Problema Raíz:** Badges/etiquetas no son explícitas
-- **Impacto en Proyecto:** Reduce confianza en que la cita fue registrada
+**Definitive Conclusion:**
+**Age is a correlation, not the cause.** The real variable is **digital competence and familiarity with mobile interfaces**.
 
-### 2.5 Diferencias Críticas entre Grupos
+### 2.3 Shared Strengths (Both Groups)
 
-#### Diferencia 1: Actitud hacia Exploración
-- **Grupo A:** Algunos usuarios exploran activamente; otros evitan
-- **Grupo B:** Mayoría pide confirmación antes de explorar
-- **Impacto:** Grupo B requiere interfaz más guiada o tutorial
+#### 1. **Trust in Institutional Branding**
 
-#### Diferencia 2: Tolerancia a Errores
-- **Grupo A:** Usuario 1 (SUS 100) cometió 0 errores; Usuario 4 (SUS 40) cometió muchos
-- **Grupo B:** Distribución más consistente; rango 3-22 errores
-- **Impacto:** Grupo B necesita más protección contra errores (botones más grandes, espaciado mayor)
+- **Both groups:** High trust in UADY + Microsoft SSO
+- **Impact:** Compensates for friction in other areas
+- **Implication:** Investing in branding is an investment in UX
 
-#### Diferencia 3: Precisión Motora
-- **Grupo A:** Sin reports de problemas motores
-- **Grupo B:** Grazielita: 5 clics accidentales
-- **Causa Probable:** Fatiga post-turno; menor familiaridad con pantalla táctil
-- **Impacto:** Necesidad de aumentar target size de botones
+#### 2. **Acceptance of Business Rules**
 
----
+- **Both groups:** Immediately understand why they cannot schedule appointments in the past
+- **Both groups:** Do not repeatedly click disabled buttons
+- **Impact:** No confusion about system restrictions
+- **Implication:** Business logic is intuitive; no changes required
 
-## SECCIÓN 3: CONCLUSIONES GLOBALES
+#### 3. **Patience with Loading States**
 
-### 3.1 Conclusión Principal
+- **Both groups:** 0% repeated clicks while loading
+- **Both groups:** Wait patiently
+- **Impact:** Loading indicators are effective
+- **Implication:** Loading states are well designed
 
-El **Sistema de Citas Médicas UADY cumple con su objetivo funcional** (agendamiento exitoso, visualización de citas, cancelación) en ambas poblaciones, **pero presenta fricción operacional significativa** que afecta especialmente a usuarios con baja competencia digital, independientemente de la edad.
+### 2.4 Common Problems (Both Groups)
 
-**Evidencia Clave:**
+#### 1. **Login = Critical Entry Barrier**
 
-- 98% de tareas completadas (Grupo A)
-- 93% de tareas completadas (Grupo B)
-- SUS 77.5 y 70.0 (ambos bajo)
-- 50-80% abandono post-agendamiento (ambos grupos)
-- 25% requiere asistencia en login (ambos grupos)
+- **Group A:** 25% required assistance (User 4)
+- **Group B:** 25% required assistance (Grazielita)
+- **Root Problem:** Virtual keyboard + complex passwords
+- **Project Impact:** Reduces adoption rate
 
-**Diagnóstico:** La aplicación es **funcional pero no es verdaderamente accesible** para todos los usuarios objetivo.
+#### 2. **Post-Booking Friction (50-80% Abandonment)**
 
-### 3.2 Factor Determinante: Competencia Digital > Edad
+- **Group A:** Users get lost searching for appointment details
+- **Group B:** Exactly the same pattern
+- **Root Problem:** Confusing Information Architecture in the appointments section
+- **Project Impact:** Users complete booking but do not validate success
 
-**Hallazgo Investigativo:**
+#### 3. **Lack of Clarity in Transaction States**
 
-La variable que mejor predice desempeño **no es la edad, sino la competencia digital**:
+- **Both groups:** Do not immediately understand the meaning of "Requested" vs "Scheduled"
+- **Both groups:** Ask validation questions ("Was it saved?")
+- **Root Problem:** Badges/labels are not explicit
+- **Project Impact:** Reduces confidence that the appointment was successfully registered
 
-- Verónica (54 años, competencia moderada) → SUS ~72, 0 bloqueos cognitivos
-- Grazielita (edad similar, competencia muy baja) → SUS ~68, 2 bloqueos cognitivos
-- Usuario 1 (joven) → SUS 100, 0 problemas
-- Usuario 4 (joven) → SUS 40, múltiples problemas
+### 2.5 Critical Differences Between Groups
 
-**Conclusión:** 
+#### Difference 1: Attitude Toward Exploration
 
-$$\text{Desempeño (SUS)} \propto \text{Competencia Digital}$$
+- **Group A:** Some users actively explore; others avoid it
+- **Group B:** Most request confirmation before exploring
+- **Impact:** Group B requires a more guided interface or tutorial
 
-**Implicación de Diseño:** El sistema debe ser diseñado para acomodar el espectro completo de competencia digital, **no para un rango de edad específico**.
+#### Difference 2: Error Tolerance
 
-### 3.3 Satisfacción Global: Es aceptable
+- **Group A:** User 1 (SUS 100) made 0 errors; User 4 (SUS 40) made many
+- **Group B:** More consistent distribution; range 3-22 errors
+- **Impact:** Group B needs stronger error protection (larger buttons, more spacing)
 
-**Dato Cualitativo Consistente:**
+#### Difference 3: Motor Precision
 
-- Todos los usuarios confirmaron que **usarían la app frecuentemente**
-- Razón: Insatisfacción severa con sistema actual (esperas largas, teléfono no responde)
-- Todos percibieron el branding UADY + Microsoft como **seguro y profesional**
-- Pero reconocen que **hay pequeños detalles que mejorar**
-- SUS marginal (70-77) indica que los "pequeños detalles" son en realidad **fricción operacional significativa**
+- **Group A:** No reports of motor issues
+- **Group B:** Grazielita: 5 accidental clicks
+- **Probable Cause:** Post-shift fatigue; less familiarity with touch screens
+- **Impact:** Need to increase button target size
 
-**Conclusión:** La necesidad del usuario (mejorar sistema actual) **supera las fricciones actuales**, pero eso **no significa que la UX sea óptima**. La brecha entre SUS 77.5 y el umbral de 80 es crítica.
+## Global Conclusions
 
-### 3.4 Diferencia Género: No es Factor Relevante
+### 3.1 Main Conclusion
 
-**Análisis:**
-- 3 mujeres en Grupo A: SUS 97.5, 72.5, 40.0 (rango: 57.5)
-- 1 hombre en Grupo A: SUS 100
-- 3 mujeres en Grupo B: SUS ~68-72
-- 1 hombre en Grupo B: SUS ~70
+The **UADY Medical Appointment System fulfills its functional objective** (successful booking, appointment visualization, cancellation) in both populations, **but it presents significant operational friction** that especially affects users with low digital competence, regardless of age.
 
-**Conclusión:** Género **no es predictor de desempeño**. La variación es mayor **dentro del género** que **entre géneros**. Variable de competencia digital enmasca cualquier posible efecto de género.
+**Evidence:**
 
-### 3.5 Oportunidad Crítica: Login es Cuello de Botella
+- 98% task completion (Group A)
+- 93% task completion (Group B)
+- SUS 77.5 and 70.0 (both below target)
+- 50-80% post-booking abandonment (both groups)
+- 25% require assistance during login (both groups)
 
-**Análisis:**
-- Si solo 25% necesita asistencia en login, significa 75% lo logra solo
-- Pero esos usuarios que lo logran **reportan frustración considerable**
-- El SUS bajo (77.5, 70.0) probablemente sea impulsado principalmente por la experiencia de login
+**Diagnosis:** The application is **functional but not truly accessible** for all target users.
 
-**Hypothetical:** Si se mejora solo el Login (sin tocar Appointments), se proyecta:
-- SUS Grupo A: 77.5 → ~85 (+7.5 puntos)
-- SUS Grupo B: 70.0 → ~78 (+8 puntos)
+### 3.2 Determining Factor: Digital Competence > Age
 
-**Login es la parte de mayor impacto para mejorar satisfacción global.**
+**Research Finding:**
 
----
+The variable that best predicts performance **is not age, but digital competence**:
 
-## SECCIÓN 4: PROPUESTAS
+- Verónica (54 years old, moderate competence) → SUS ~72, 0 cognitive blocks
+- Grazielita (similar age, very low competence) → SUS ~68, 2 cognitive blocks
+- User 1 (young) → SUS 100, 0 problems
+- User 4 (young) → SUS 40, multiple problems
 
-### 4.1 Prioritarias (P0 - Implementar Inmediato)
+**Conclusion:**
 
-#### P0.1: Eliminar Fricción de Login mediante Biometría
+**Design Implication:** The system must be designed to accommodate the full spectrum of digital competence, **not for a specific age range**.
 
-**Problema:**
-- Teclado virtual causa múltiples typos, frustración, abandono
-- Usuario necesita tipear email + contraseña compleja
-- Especialmente problemático para usuarios con baja precisión motora
+### 3.3 Overall Satisfaction
 
-**Solución Propuesta: Autenticación Biométrica**
+**Consistent Qualitative Data:**
 
-```
-Flujo Mejorado:
+- All users confirmed they **would use the app frequently**
+- Reason: Severe dissatisfaction with the current system (long waits, unanswered phone calls)
+- Everyone perceived the UADY + Microsoft branding as **secure and professional**
+- However, they acknowledged that **there are small details to improve**
+- Marginal SUS scores (70-77) indicate that the "small details" are actually **significant operational friction**
+
+**Conclusion:** The users’ need (improving the current system) **outweighs the existing friction**, but that **does not mean the UX is optimal**. The gap between SUS 77.5 and the threshold of 80 is critical.
+
+## Proposals
+
+### 4.1 Priority Proposals (P0 - Immediate Implementation)
+
+#### P0.1: Eliminate Login Friction Through Biometrics
+
+**Problem:**
+
+- The virtual keyboard causes multiple typos, frustration, and abandonment
+- Users must type email + complex password
+- Especially problematic for users with low motor precision
+
+**Proposed Solution: Biometric Authentication**
+
+```text
+Improved Flow:
 ┌─────────────────┐
-│ PANTALLA LOGIN  │
+│ LOGIN SCREEN    │
 ├─────────────────┤
 │                 │
 │ ┌─────────────┐ │
-│ │ Usar Huella │ │  ← Botón primario, visible
-│ │  Dactilar   │ │
+│ │ Use Finger  │ │  ← Primary visible button
+│ │   Print     │ │
 │ └─────────────┘ │
 │                 │
-│ O Usar Email    │  ← Opción secundaria
+│ Or Use Email    │  ← Secondary option
 │                 │
 └─────────────────┘
-```
+````
 
-**Beneficios:**
+**Benefits:**
 
-- Elimina 100% del problema de teclado virtual
-- Más rápido (1 toque vs 50+ toque)
-- Más seguro (biometría > contraseña)
-- Accesible para usuarios de todas las edades
+* Eliminates 100% of virtual keyboard problems
+* Faster (1 tap vs 50+ taps)
+* More secure (biometrics > password)
+* Accessible for users of all ages
 
-**Implementación:**
+**Implementation:**
 
-- Integrar con biometric APIs del dispositivo (iOS Face ID, Android Biometric API)
-- Usar Microsoft Authenticator como alternativa (ya mencionado por evaluados)
-- Mantener opción de email/password para fallback
-- Promover biometría como método preferido
+* Integrate with device biometric APIs (iOS Face ID, Android Biometric API)
+* Use Microsoft Authenticator as an alternative (already mentioned by participants)
+* Maintain email/password option as fallback
+* Promote biometrics as the preferred method
 
-**Impacto Proyectado:** +8-10 puntos SUS
+**Projected Impact:** +8-10 SUS points
 
-#### P0.2: Redireccionamiento Inmediato Post-Agendamiento
+#### P0.2: Immediate Post-Booking Redirection
 
-**Problema:**
+**Problem:**
 
-- Usuario completa agendamiento exitosamente
-- Pero no sabe dónde encontrar su cita
-- 50-80% abandono cuando intenta validar su cita
-- Incertidumbre: "¿Se guardó?" "¿Dónde está?"
+* The user successfully completes the booking
+* But does not know where to find the appointment
+* 50-80% abandonment when trying to validate the appointment
+* Uncertainty: "Was it saved?" "Where is it?"
 
-**Solución Propuesta: Ticket Visible Inmediato**
+**Proposed Solution: Immediate Visible Ticket**
 
-```
-Flujo Mejorado:
+```text
+Improved Flow:
 
-ANTES (Actual):
-Paso 1: Agregar especialidad
-Paso 2: Seleccionar fecha
-Paso 3: Seleccionar doctor
-Paso 4: Confirmar
-[Pantalla vuelve al HOME]
-"¿Dónde está mi cita?" → Usuario se pierde
+BEFORE (Current):
+Step 1: Add specialty
+Step 2: Select date
+Step 3: Select doctor
+Step 4: Confirm
+[Screen returns to HOME]
+"Where is my appointment?" → User gets lost
 
-DESPUÉS (Mejorado):
-Paso 1-4: [igual]
-[NUEVO] Paso 5: SPLASH SCREEN
+AFTER (Improved):
+Step 1-4: [same]
+[NEW] Step 5: SPLASH SCREEN
 ┌────────────────────────┐
-│    ✅ CITA AGENDADA    │
+│   ✅ APPOINTMENT BOOKED │
 ├────────────────────────┤
 │                        │
 │  Dr. Juan García       │
-│  Medicina General      │
-│  📅 Mayo 29, 2026      │
+│  General Medicine      │
+│  📅 May 29, 2026       │
 │  🕐 10:20 AM           │
-│  📍 Campus Principal   │
+│  📍 Main Campus        │
 │  🎟️  Ref: #12345      │
 │                        │
 │ ┌──────────────────┐   │
-│ │  Ver Detalles ▶  │ ◄─ Botón gigante, dorado
+│ │ View Details ▶   │ ◄─ Large golden button
 │ └──────────────────┘   │
 │                        │
-│     [Volver al Home]   │
+│     [Back to Home]     │
 │                        │
 └────────────────────────┘
 ```
 
-**Beneficios:**
-- Confirmación visual inmediata de éxito
-- Información clave visible en un vistazo
-- Usuario puede hacer screenshot para referencia
-- Reduce incertidumbre ("¿Se guardó?")
-- Transición suave a "Mis Citas"
+**Benefits:**
 
-**Implementación:**
-- Crear modal/full-screen confirmation tras endpoint de creación de cita
-- Mostrar datos clave: doctor, especialidad, fecha, hora, campus
-- Incluir número de referencia
-- Botón "Ver Detalles" navega a cita en "Mis Citas"
-- Botón "Compartir" para enviar por WhatsApp/SMS
-- Botón "Volver al Home" para cerrar
+* Immediate visual confirmation of success
+* Key information visible at a glance
+* User can take a screenshot for reference
+* Reduces uncertainty ("Was it saved?")
+* Smooth transition to "My Appointments"
 
-**Impacto Proyectado:** +10-12 puntos SUS (soluciona 50-80% de abandono post-agendamiento)
+**Implementation:**
 
-#### P0.3: Aumentar Contraste y Legibilidad de Tarjetas de Citas
+* Create a modal/full-screen confirmation after appointment creation endpoint
+* Show key data: doctor, specialty, date, time, campus
+* Include reference number
+* "View Details" button navigates to appointment in "My Appointments"
+* "Share" button for WhatsApp/SMS
+* "Back to Home" button to close
 
-**Problema:**
-- Usuarios reportan dificultad leyendo detalles de citas
-- 75% del Grupo A usa lentes; muchos pidieron aumento de fuente
-- Tarjetas actuales probablemente tienen contraste bajo o texto pequeño
-- Especialmente impacta a Grupo B (mayores)
+**Projected Impact:** +10-12 SUS points (solves 50-80% post-booking abandonment)
 
-**Solución Propuesta: Rediseño de Tarjetas de Citas**
+#### P0.3: Increase Contrast and Readability of Appointment Cards
 
-```
-TARJETA ACTUAL (Inferida - Compacta):
+**Problem:**
+
+* Users reported difficulty reading appointment details
+* 75% of Group A wears glasses; many requested larger font size
+* Current cards likely have low contrast or small text
+* Especially affects Group B (older adults)
+
+**Proposed Solution: Appointment Card Redesign**
+
+```text
+CURRENT CARD (Inferred - Compact):
 ┌────────────────────────┐
-│ Dr. García | Cita #001 │
+│ Dr. García | Appt #001 │
 │ Gen. Med   │ May 29    │
 │ 10:20 AM   │ Campus 1  │
 │ Status: ⚪ Requested   │
 └────────────────────────┘
 
-TARJETA MEJORADA (Ampliada + Contraste):
+IMPROVED CARD (Expanded + Contrast):
 ┌──────────────────────────────────────┐
 │                                      │
-│  🏥 CITA PROGRAMADA                  │  ← Emoji claro
+│  🏥 SCHEDULED APPOINTMENT            │
 │                                      │
-│  👨‍⚕️  DR. JUAN GARCÍA                  │  ← Font grande
-│     Medicina General                 │
+│  👨‍⚕️  DR. JUAN GARCÍA                │
+│     General Medicine                 │
 │                                      │
-│  📅 Miércoles, 29 de Mayo 2026       │  ← Fecha expandida
+│  📅 Wednesday, May 29, 2026          │
 │  🕐 10:20 AM                         │
-│  📍 Campus Principal                 │
+│  📍 Main Campus                      │
 │                                      │
 │  ───────────────────────────────     │
-│  Status: ✅ CONFIRMADA               │  ← Color verde claro
-│  Referencia: #001234567             │
+│  Status: ✅ CONFIRMED                │
+│  Reference: #001234567              │
 │                                      │
-│  [Ver Detalles Completos] [Editar]   │
+│ [View Full Details] [Edit]           │
 │                                      │
 └──────────────────────────────────────┘
 ```
 
-**Especificaciones:**
+**Specifications:**
 
-- Font: +2 tamaños vs. actual (16px → 18-20px minimum)
-- Contraste: WCAG AA mínimo (4.5:1 para texto normal)
-- Spacing: Aumentar padding entre elementos
-- Visual Hierarchy: Usar emojis para categorizar información
-- Color-Coding: Estados con colores + iconos (verde, amarillo, rojo)
-- Simplificación: Mostrar solo 5-6 datos clave; "Ver Detalles" para resto
+* Font: +2 sizes compared to current (16px → 18-20px minimum)
+* Contrast: WCAG AA minimum (4.5:1 for normal text)
+* Spacing: Increase padding between elements
+* Visual Hierarchy: Use emojis to categorize information
+* Color-Coding: States with colors + icons (green, yellow, red)
+* Simplification: Show only 5-6 key data points; "View Details" for the rest
 
-**Beneficios:**
+**Benefits:**
 
-- Legibilidad mejorada para usuarios con visión reducida
-- Accesibilidad WCAG AA
-- Información más intuitiva con emojis
-- Menos cognitive load (menos información en vista principal)
-- Especialmente beneficioso para Grupo B (mayores)
+* Improved readability for users with reduced vision
+* WCAG AA accessibility compliance
+* More intuitive information with emojis
+* Lower cognitive load (less information on main screen)
+* Especially beneficial for Group B (older adults)
 
-**Implementación:**
+**Implementation:**
 
-- Rediseñar componente de Card en interfaz
-- Actualizar typography system
-- Auditar contraste con herramienta WCAG (Contrast Ratio Checker)
-- Test A/B con usuarios de ambos grupos
+* Redesign Card component in the interface
+* Update typography system
+* Audit contrast with WCAG tools (Contrast Ratio Checker)
+* A/B testing with users from both groups
 
-**Impacto Proyectado:** +5-7 puntos SUS
+**Projected Impact:** +5-7 SUS points
 
-### 4.2 Secundarias (P1 - Implementar Pronto)
+### 4.2 Secondary Proposals (P1 - Implement Soon)
 
-#### P1.1: Mejorar Navegación Post-Agendamiento (IA)
+#### P1.1: Improve Post-Booking Navigation (IA)
 
-**Problema:**
-- Después de agendar, usuario intenta encontrar su cita
-- Information Architecture confusa
-- Tab activos no son claramente distinguibles
-- 50-80% abandono en búsqueda de detalles
+**Problem:**
 
-**Solución Propuesta: Breadcrumb + Mejor Distinción de Tabs**
+* After booking, users try to find their appointment
+* Confusing Information Architecture
+* Active tabs are not clearly distinguishable
+* 50-80% abandonment while searching for details
 
-```
-BREADCRUMB (Nuevo):
-[Home] > [Mis Citas] > [Cita Actual] > [Detalles]
+**Proposed Solution: Breadcrumb + Better Tab Distinction**
 
-TABS (Mejorado):
+```text
+BREADCRUMB (New):
+[Home] > [My Appointments] > [Current Appointment] > [Details]
+
+TABS (Improved):
 ┌──────────────────────────────────────┐
-│  [Agendar Nueva ⭕] [Ver Mis Citas 📋]  │ ← Activos más visibles
+│ [Book New ⭕] [My Appointments 📋]    │ ← More visible active tabs
 ├──────────────────────────────────────┤
-│ Contenido de tab seleccionado        │
+│ Selected tab content                 │
 │                                      │
 └──────────────────────────────────────┘
 
-Diferencias:
-- Tab activo: Fondo color, texto blanco
-- Tab inactivo: Fondo gris claro, texto oscuro
-- Underline animado de tab activo
-- Emojis para identificar rápidamente
+Differences:
+- Active tab: Colored background, white text
+- Inactive tab: Light gray background, dark text
+- Animated underline on active tab
+- Emojis for quick identification
 ```
 
-**Implementación:**
-- Agregar componente Breadcrumb
-- Aumentar visibilidad de tab activo (fondo color vs gris)
-- Agregar underline animado
-- Usar emojis como prefijo de label de tab
-- Test con users: confirmar navegación intuitiva
+**Implementation:**
 
-**Impacto Proyectado:** +3-5 puntos SUS
+* Add Breadcrumb component
+* Increase visibility of active tabs (colored background vs gray)
+* Add animated underline
+* Use emojis as tab label prefixes
+* Test with users to confirm intuitive navigation
 
-#### P1.2: Protección contra Errores Motores (Aumentar Target Size)
+**Projected Impact:** +3-5 SUS points
 
-**Problema:**
-- Grazielita (Grupo B) cometió 5 clics accidentales
-- Probablemente debido a fatiga post-turno y tamaño de botones
-- Hit target muy pequeño (< 44x44 px)
+#### P1.2: Protection Against Motor Errors (Increase Target Size)
 
-**Solución Propuesta: Aumentar Tamaño de Botones**
+**Problem:**
 
-```
-Estándar Actual (Inferido): 40x40 px
-Recomendación iOS/Android: 44x44 px mínimo
-Recomendación Accesibilidad: 48x48 px
+* Grazielita (Group B) made 5 accidental clicks
+* Likely due to post-shift fatigue and button size
+* Hit target too small (< 44x44 px)
 
-AUMENTO PROPUESTO:
-- Botones principales: 56x56 px (de 44-48)
-- Espaciado entre botones: +8px
-- Padding interno: Aumentar
+**Proposed Solution: Increase Button Sizes**
 
-Ej. Selector de Doctor (Dropdown):
+```text
+Current Standard (Inferred): 40x40 px
+iOS/Android Recommendation: 44x44 px minimum
+Accessibility Recommendation: 48x48 px
+
+PROPOSED INCREASE:
+- Primary buttons: 56x56 px (from 44-48)
+- Spacing between buttons: +8px
+- Increase internal padding
+
+Example. Doctor Selector (Dropdown):
 ┌────────────────────────────────────┐
-│  Doctor (Selector):                │
+│ Doctor (Selector):                 │
 ├────────────────────────────────────┤
 │                                    │
-│  □ Dr. Juan García        [▼]      │ ← Target 56px height
+│ □ Dr. Juan García        [▼]       │ ← 56px height target
 │                                    │
-│  □ Dra. María López       [▼]      │ ← Espaciado ++
+│ □ Dra. María López       [▼]       │ ← Increased spacing
 │                                    │
-│  □ Dr. Carlos Pérez       [▼]      │
+│ □ Dr. Carlos Pérez       [▼]       │
 │                                    │
-│           [Confirmar]              │ ← Botón 56x56
+│          [Confirm]                 │ ← 56x56 button
 │                                    │
 └────────────────────────────────────┘
 ```
 
-**Beneficios:**
-- Reduce clics accidentales
-- Mejor para usuarios con precisión motora reducida
-- Cumple con WCAG AA (48px recomendado)
-- Especialmente beneficioso para Grupo B
+**Benefits:**
 
-**Implementación:**
-- Auditar design system: tamaños actuales de botones
-- Aumentar base de 44px a 56px
-- Aumentar spacing de 4px a 8px
-- Test con usuarios post-fatiga
+* Reduces accidental clicks
+* Better for users with reduced motor precision
+* Complies with WCAG AA (48px recommended)
+* Especially beneficial for Group B
 
-**Impacto Proyectado:** +2-3 puntos SUS
+**Implementation:**
 
-#### P1.3: Agregar Tutorial/Onboarding Interactivo
+* Audit design system: current button sizes
+* Increase base size from 44px to 56px
+* Increase spacing from 4px to 8px
+* Test with users after fatigue
 
-**Problema:**
-- 50% del Grupo B expresó miedo a explorar
-- Algunos pidieron confirmación incluso antes de botones obvios
-- Falta de guía inicial para usuarios de baja competencia
+**Projected Impact:** +2-3 SUS points
 
-**Solución Propuesta: Tutorial First-Run (Opcional)**
 
-```
+#### P1.3: Add Interactive Tutorial/Onboarding
+
+**Problem:**
+
+- 50% of Group B expressed fear of exploring
+- Some requested confirmation even before obvious buttons
+- Lack of initial guidance for low-competence users
+
+**Proposed Solution: Optional First-Run Tutorial**
+
+```text
 FIRST RUN EXPERIENCE:
 
-Pantalla 1: Welcome
+Screen 1: Welcome
 ┌────────────────────────┐
-│  🏥 BIENVENIDO          │
-│  Sistema de Citas UADY  │
+│  🏥 WELCOME            │
+│  UADY Appointment      │
+│  System                │
 │                        │
-│  Este app facilita el  │
-│  agendamiento de       │
-│  citas médicas         │
+│  This app makes        │
+│  medical appointment   │
+│  booking easier        │
 │                        │
-│  [Continuar] [Saltar]  │
+│ [Continue] [Skip]      │
 └────────────────────────┘
 
-Pantalla 2: Cómo Agendar
+Screen 2: How to Book
 ┌────────────────────────┐
-│  📋 PASO 1: AGENDAR    │
+│ 📋 STEP 1: BOOKING     │
 │                        │
-│  Toca el botón dorado  │
-│  "Agendar Nueva Cita"  │
-│  en la pantalla inicio │
+│ Tap the golden button  │
+│ "Book New Appointment" │
+│ on the home screen     │
 │                        │
-│  [Botón Ejemplo]       │
+│ [Example Button]       │
 │                        │
-│  [Continuar]           │
+│ [Continue]             │
 └────────────────────────┘
 
-Pantalla 3: Ver Mis Citas
-Pantalla 4: Cancelar Cita
+Screen 3: View My Appointments
+Screen 4: Cancel Appointment
 
-Pantalla Final: Comenzar
-```
+Final Screen: Get Started
+````
 
-**Beneficios:**
-- Reduce miedo/incertidumbre inicial
-- Familiariza usuario con flows principales
-- Especialmente valioso para Grupo B
-- Puede ser saltado por usuarios experimentados
+**Benefits:**
 
-**Implementación:**
-- Crear componente Tutorial
-- Store flag "tutorial_completed" en localStorage
-- Mostrar solo en first-run
-- Link "Ver Tutorial" siempre disponible en Help
+* Reduces fear and initial uncertainty
+* Familiarizes users with the main flows
+* Especially valuable for Group B
+* Can be skipped by experienced users
 
-**Impacto Proyectado:** +4-6 puntos SUS (especialmente Grupo B)
+**Implementation:**
 
-#### P1.4: Mejorar Mensajes de Estado con Banner Explícito
+* Create Tutorial component
+* Store "tutorial_completed" flag in localStorage
+* Show only on first run
+* Keep "View Tutorial" option always available in Help section
 
-**Problema:**
-- Alejandro sugirió: cuando no se puede agendar en mes pasado, solo se grisea sin explicación
-- Usuario puede no entender por qué está deshabilitado
-- Mejora sugerida: banner explícito "Solo puede agendar citas en fecha futura"
+**Projected Impact:** +4-6 SUS points (especially for Group B)
 
-**Solución Propuesta: Toast Notification**
+#### P1.4: Improve Status Messages with Explicit Banner
 
-```
-Al intentar navegar a mes pasado:
+**Problem:**
+
+* Alejandro suggested that when booking in a past month is not allowed, it is only grayed out without explanation
+* Users may not understand why the action is disabled
+* Suggested improvement: explicit banner saying "Appointments can only be booked for future dates"
+
+**Proposed Solution: Toast Notification**
+
+```text
+When attempting to navigate to a past month:
 
 ┌─────────────────────────────────────┐
-│ ℹ️  INFORMACIÓN                     │
+│ ℹ️  INFORMATION                     │
 ├─────────────────────────────────────┤
-│ Solo puede agendar citas para      │
-│ fechas futuras. Seleccione una     │
-│ fecha en el mes actual o posterior. │
+│ Appointments can only be booked     │
+│ for future dates. Please select     │
+│ a date in the current or a future   │
+│ month.                              │
 │                                     │
-│              [Entendido]            │
+│             [Understood]            │
 │                                     │
 └─────────────────────────────────────┘
 ```
 
-**Beneficios:**
-- Explica por qué una acción no es permitida
-- Reduce confusión
-- Mejora percepción de sistema comunicativo
+**Benefits:**
 
-**Implementación:**
-- Detectar intento de seleccionar mes pasado
-- Mostrar toast/modal con mensaje explicativo
-- Mantener restricción visual (griseo)
+* Explains why an action is not allowed
+* Reduces confusion
+* Improves perception of system communication
 
-**Impacto Proyectado:** +1-2 puntos SUS
+**Implementation:**
 
-### 4.3 Terciarias (P2 - Considerar)
+* Detect attempts to select past months
+* Show toast/modal with explanatory message
+* Maintain visual restriction (grayed out state)
 
-#### P2.1: Agregar Haptic Feedback en Interacciones
+**Projected Impact:** +1-2 SUS points
 
-**Problema:** Especialmente para Grupo B con precisión motora reducida, feedback táctil mejora confirmación
+### 4.3 Tertiary Proposals (P2 - Consider)
 
-**Solución:** Vibración leve al hacer clic en botones, al seleccionar dropdown
+#### P2.1: Add Haptic Feedback to Interactions
 
-**Beneficio:** +1 punto SUS, mejora perceived responsiveness
+**Problem:** Especially for Group B users with reduced motor precision, tactile feedback improves confirmation.
 
-#### P2.2: Opción de Aumentar Tamaño de Fuente Globalmente
+**Solution:** Slight vibration when tapping buttons or selecting dropdowns.
 
-**Problema:** 75% reporta problemas visuales; algunos necesitan más que el aumento por defecto
+**Benefit:** +1 SUS point, improves perceived responsiveness.
 
-**Solución:** Settings > Tamaño de Fuente (Normal / Grande / Muy Grande)
+#### P2.2: Option to Increase Font Size Globally
 
-**Beneficio:** +2 puntos SUS, especialmente Grupo B
+**Problem:** 75% reported visual issues; some need more than the default increase.
 
-#### P2.3: Dark Mode (Opcional)
+**Solution:** Settings > Font Size (Normal / Large / Extra Large)
 
-**Problema:** Algunos usuarios con problemas visuales prefieren dark mode
+**Benefit:** +2 SUS points, especially for Group B.
 
-**Solución:** Agregar toggle en Settings
+#### P2.3: Dark Mode (Optional)
 
-**Beneficio:** +1 punto SUS
+**Problem:** Some users with visual difficulties prefer dark mode.
 
----
+**Solution:** Add toggle in Settings.
 
-## RESUMEN DE PROPUESTAS
+**Benefit:** +1 SUS point.
 
-### Matriz de Impacto vs. Esfuerzo
+### Impact vs. Effort Matrix
 
-| Recomendación | Impacto SUS | Esfuerzo | Prioridad | Tipo |
-|---|---|---|---|---|
-| **P0.1: Biometría** | +8-10 | Medio | CRÍTICA | Backend + Frontend |
-| **P0.2: Ticket Inmediato** | +10-12 | Bajo | CRÍTICA | Frontend |
-| **P0.3: Mejorar Legibilidad** | +5-7 | Bajo | CRÍTICA | Frontend (Design) |
-| **P1.1: Breadcrumb + Tabs** | +3-5 | Bajo | ALTA | Frontend |
-| **P1.2: Target Size** | +2-3 | Bajo | ALTA | Design |
-| **P1.3: Tutorial** | +4-6 | Medio | ALTA | Frontend + Content |
-| **P1.4: Toast Notifications** | +1-2 | Muy Bajo | MEDIA | Frontend |
-| **P2.1: Haptic Feedback** | +1 | Bajo | MEDIA | Frontend |
-| **P2.2: Font Size Settings** | +2 | Bajo | MEDIA | Frontend + Backend |
+| Recommendation                | SUS Impact | Effort   | Priority | Type               |
+| ----------------------------- | ---------- | -------- | -------- | ------------------ |
+| **P0.1: Biometrics**          | +8-10      | Medium   | CRITICAL | Backend + Frontend |
+| **P0.2: Immediate Ticket**    | +10-12     | Low      | CRITICAL | Frontend           |
+| **P0.3: Improve Readability** | +5-7       | Low      | CRITICAL | Frontend (Design)  |
+| **P1.1: Breadcrumb + Tabs**   | +3-5       | Low      | HIGH     | Frontend           |
+| **P1.2: Target Size**         | +2-3       | Low      | HIGH     | Design             |
+| **P1.3: Tutorial**            | +4-6       | Medium   | HIGH     | Frontend + Content |
+| **P1.4: Toast Notifications** | +1-2       | Very Low | MEDIUM   | Frontend           |
+| **P2.1: Haptic Feedback**     | +1         | Low      | MEDIUM   | Frontend           |
+| **P2.2: Font Size Settings**  | +2         | Low      | MEDIUM   | Frontend + Backend |
 
-### Impacto Proyectado Post-Implementación
+### Projected Impact After Implementation
 
-**Escenario Pesimista (Solo P0):**
+**Pessimistic Scenario (Only P0):**
 
-- Grupo A: 77.5 → 85.0 (+7.5 puntos, +9.7%)
-- Grupo B: 70.0 → 78.5 (+8.5 puntos, +12.1%)
+* Group A: 77.5 → 85.0 (+7.5 points, +9.7%)
+* Group B: 70.0 → 78.5 (+8.5 points, +12.1%)
 
-**Escenario Realista (P0 + P1):**
+**Realistic Scenario (P0 + P1):**
 
-- Grupo A: 77.5 → 88.0 (+10.5 puntos, +13.5%)
-- Grupo B: 70.0 → 82.0 (+12 puntos, +17.1%)
+* Group A: 77.5 → 88.0 (+10.5 points, +13.5%)
+* Group B: 70.0 → 82.0 (+12 points, +17.1%)
 
-**Escenario Optimista (P0 + P1 + P2):**
+**Optimistic Scenario (P0 + P1 + P2):**
 
-- Grupo A: 77.5 → 90.0 (+12.5 puntos, +16.1%)
-- Grupo B: 70.0 → 84.5 (+14.5 puntos, +20.7%)
+* Group A: 77.5 → 90.0 (+12.5 points, +16.1%)
+* Group B: 70.0 → 84.5 (+14.5 points, +20.7%)
 
-**Conclusión:** Con implementación de P0 (3 cambios críticos), ambos grupos **alcanzan o superan umbral SUS de 80** (aceptable).
+**Conclusion:** With implementation of P0 (3 critical changes), both groups **reach or exceed the SUS threshold of 80** (acceptable).
 
-## CONCLUSIÓN
+## Compliance with Usability Attributes
 
-El **Sistema de Citas Médicas UADY tiene potencial muy alto**, evidenciado por:
+### 5.1 Evaluated Attributes
 
-- 97-98% de completación de tareas
-- Alta confianza en branding institucional
-- Arquitectura progresiva efectiva
-- Usuarios dispuestos a usar frecuentemente
+| Attribute                   | Target                          |
+| --------------------------- | ------------------------------- |
+| Operability / Intuitiveness | SUS > 80                        |
+| Accessibility               | WCAG 2.1 AA                     |
+| Satisfaction                | SUS > 80; High Trust            |
+| Error Protection            | Recovery > 90%                  |
+| Learnability                | 0% abandonment due to confusion |
+| Quick Feedback              | 0 repeated clicks               |
+| Less Brain Work             | Progressive information         |
 
-Sin embargo, **requiere mejoras en accesibilidad operacional** para alcanzar estándar de industria (SUS 80+):
+### 5.2 Compliance Results
 
-- Login es barrera crítica
-- Post-agendamiento causa abandono
-- Legibilidad inadecuada para usuarios con visión reducida
-- Falta de soporte para usuarios de baja competencia digital
+#### 1. OPERABILITY / INTUITIVENESS: **72%**
 
-**Las recomendaciones presentadas son alcanzables y de bajo riesgo.** Implementar prioritarias (P0) completaría la solución antes de lanzamiento en producción.
+* Login Clicks: 7.3 (A) / 6.1 (B) → Acceptable
+* Appointment Clicks: 3.8 (A) / 4.1 (B) → Excellent
+* SUS: 73.75 average → Low
+* **Gap:** -8% from target
 
----
+#### 2. ACCESSIBILITY: **61%**
 
-## APÉNDICE
+* Users with visual issues: 75%
+* Virtual Keyboard: Critical (Grazielita required assistance)
+* Button Size: 44x44px (insufficient; recommended 48x48)
+* **Gap:** -19% from target
 
-### A. Participantes y Perfiles
+#### 3. SATISFACTION: **84%**
 
-**Grupo A (Manuales/Jóvenes):**
+* Motivation: 100% Frequent use intention
+* Trust in Branding: 100% High
+* Security Perception: 100% Very High
+* SUS: 73.75%
+* **Gap:** +4% above target
 
-- 4 usuarios, edad 35-45 años
-- Personal de mantenimiento, limpieza, administrativo
-- Competencia digital: Variable (40-100 SUS)
+#### 4. USER ERROR PROTECTION: **98%**
 
-**Grupo B (Mayores):**
+* Incorrect Email: 100% recovery
+* Accidental Cancellations: 0 out of 8
+* Confirmation Modals: 100% read
+* **Gap:** +18% above target
 
-- 4 usuarios, edad 45-55 años
-- Personal de mantenimiento, limpieza, administrativo
-- Competencia digital: Consistentemente baja-moderada (68-72 SUS)
+#### 5. LEARNABILITY: **73%**
 
-### B. Instrumentos de Medición
+* Login Button: 100% located
+* "Book Appointment" Button: 100% located
+* Progressive Flow: 100% understanding
+* Post-Booking: 50-80% abandonment
+* **Gap:** -7% from target
 
-- System Usability Scale (SUS) - 10 preguntas
-- Métricas de Tarea (clicks, errores, tiempo)
-- Observación cualitativa (notas de moderador)
-- Entrevista semi-estructurada post-test
+#### 6. QUICK FEEDBACK: **95%**
 
-### C. Material de Referencia
+* Loading States: 0% repeated clicks
+* "No Results": 100% understand latency
+* Appointment Fetch: Full patience
+* **Gap:** +15% above target
 
-- ManualesAnalisis.md - Análisis detallado Grupo A
-- OlderDemographicGroupAnalysis.md - Análisis detallado Grupo B
-- TestProtocol.md - Protocolo de pruebas completo
+#### 7. LESS BRAIN WORK: **53%**
 
+* Login: Optimal (2 fields)
+* Form: Excellent (4 progressive fields)
+* Cards: Overloaded
+* Post-App Navigation: Confusing
+* **Gap:** +27% required
+
+### 5.3 Global Summary Table
+
+| Attribute | Compliance | Gap (80%) | Status |
+|---|---|---|---|
+| Operability | 72% | -8% | Slightly **below** target |
+| Accessibility | 61% | -19% | Significantly **below** target |
+| Satisfaction | 84% | +4% | Slightly **above** target |
+| Error Protection | 98% | +18% | Significantly **above** target |
+| Learnability | 73% | -7% | Slightly **below** target |
+| Quick Feedback | 95% | +15% | Significantly **above** target |
+| Less Brain Work | 53% | -27% | Significantly **below** target |
+| **AVERAGE** | **76.6%** | **-3.4%** | Slightly **below** target |
+
+### 5.4 FINAL COMPLIANCE RESULT
+
+$$\text{Average Compliance} = \frac{72 + 61 + 84 + 98 + 73 + 95 + 53}{7} = \boxed{76.6\%}$$
+
+**Target:** 80% minimum  
+**Achieved:** 76.6%  
+**Status:** **MARGINALLY ACCEPTABLE** (4% below target)
+
+### 5.5 How to Reach 80%
+
+With P0 + P1:
+
+| Attribute | Current | Post-Improvement | Change |
+|---|---|---|---|
+| Operability | 72% | 80% | +8% |
+| Accessibility | 61% | 75% | +14% |
+| Learnability | 73% | 80% | +7% |
+| Less Brain Work | 53% | 70% | +17% |
+| **Global Average** | **76.6%** | **84.5%** | **+7.9%** |
+
+**With the recommended improvements, the system would achieve 84.5%, surpassing the 80% target.**
+
+## Final Conclusion
+
+The **UADY Medical Appointment System partially complies with the defined usability attributes**, achieving **76.6% overall compliance** (4% below the 80% target).
+
+**Outstanding Attributes:**
+- Error Protection (98%) - Highly robust system
+- Quick Feedback (95%) - Clear communication
+- Satisfaction (84%) - High emotional trust
+
+**Critical Attributes:**
+- Accessibility (61%) - Barrier for users with low digital competence
+- Less Brain Work (53%) - Cognitive overload after appointment booking
+
+**Attributes Requiring Improvement:**
+- Operability (72%) - Login creates friction
+- Learnability (73%) - Confusion after booking appointments
+
+### Implication
+
+The system is **functional but requires improvements in accessibility and cognitive load reduction** to reach industry standards. The P0 recommendations (Biometrics, Immediate Ticket, Improved Readability) would allow the system to achieve **84.5% overall compliance**, surpassing the 80% target and making the system truly accessible for all target users.
+
+## General Conclusions
+
+The **UADY Medical Appointment System has very high potential**, as evidenced by:
+
+- 97-98% task completion
+- High trust in institutional branding
+- Effective progressive architecture
+- Users willing to use the system frequently
+
+However, it **requires improvements in operational accessibility** to achieve industry standards (SUS 80+):
+
+- Login is a critical barrier
+- Post-booking navigation causes abandonment
+- Inadequate readability for users with reduced vision
+- Lack of support for users with low digital competence
+
+**The proposed recommendations are achievable and low risk.** Implementing the priority recommendations (P0) would complete the solution before production release.
+
+## References
+
+### A. Participants and Profiles
+
+**Group A (Manual Workers/Younger):**
+
+- 4 users, ages 35-45
+- Maintenance, cleaning, and administrative staff
+- Digital competence: Variable (40-100 SUS)
+
+**Group B (Older Adults):**
+
+- 4 users, ages 45-55
+- Maintenance, cleaning, and administrative staff
+- Digital competence: Consistently low-moderate (68-72 SUS)
+
+### B. Measurement Instruments
+
+- System Usability Scale (SUS) - 10 questions
+- Task Metrics (clicks, errors, time)
+- Qualitative observation (moderator notes)
+- Semi-structured post-test interview
+
+### C. Reference Materials
+
+- ManualesAnalisis.md - Detailed Group A analysis
+- OlderDemographicGroupAnalysis.md - Detailed Group B analysis
+- TestProtocol.md - Complete testing protocol
