@@ -435,7 +435,7 @@ IMPROVED CARD (Expanded + Contrast):
 **Specifications:**
 
 - Font: +2 sizes compared to current (16px → 18-20px minimum)
-- Contrast: WCAG AA minimum (4.5:1 for normal text)
+- Contrast: 4.5:1 for normal text
 - Spacing: Increase padding between elements
 - Visual Hierarchy: Use emojis to categorize information
 - Color-Coding: States with colors + icons (green, yellow, red)
@@ -444,7 +444,6 @@ IMPROVED CARD (Expanded + Contrast):
 **Benefits:**
 
 - Improved readability for users with reduced vision
-- WCAG AA accessibility compliance
 - More intuitive information with emojis
 - Lower cognitive load (less information on main screen)
 - Especially beneficial for Group B (older adults)
@@ -453,7 +452,7 @@ IMPROVED CARD (Expanded + Contrast):
 
 - Redesign Card component in the interface
 - Update typography system
-- Audit contrast with WCAG tools (Contrast Ratio Checker)
+- Contrast Ratio Checker
 - A/B testing with users from both groups
 
 **Projected Impact:** +5-7 SUS points
@@ -540,7 +539,7 @@ Example. Doctor Selector (Dropdown):
 
 - Reduces accidental clicks
 - Better for users with reduced motor precision
-- Complies with WCAG AA (48px recommended)
+- Complies with 48px recommended for a correct vision
 - Especially beneficial for Group B
 
 **Implementation:**
@@ -719,7 +718,7 @@ When attempting to navigate to a past month:
 | Attribute                   | Target                          |
 | --------------------------- | ------------------------------- |
 | Operability / Intuitiveness | SUS > 80                        |
-| Accessibility               | WCAG 2.1 AA                     |
+| Accessibility               | Clicks ratio                    |
 | Satisfaction                | SUS > 80; High Trust            |
 | Error Protection            | Recovery > 90%                  |
 | Learnability                | 0% abandonment due to confusion |
@@ -795,7 +794,7 @@ When attempting to navigate to a past month:
 
 ### 5.4 FINAL COMPLIANCE RESULT
 
-$$\text{Average Compliance} = \frac{72 + 61 + 84 + 98 + 73 + 95 + 53}{7} = \boxed{76.6\%}$$
+$7$\text{Average Compliance} = \frac{72 + 61 + 84 + 98 + 73 + 95 + 53}{7} = \boxed{76.6\%}$$
 
 **Target:** 80% minimum  
 **Achieved:** 76.6%  
