@@ -15,10 +15,10 @@ These requirements are designed to mitigate technological barriers for **Manual 
 | ID | Attribute | Specification |
 | :--- | :--- | :--- |
 | **NFR-U-01** | **Legibility** | The interface must support OS font scaling, maintaining a base size of **16px** to ensure readability for the 45-70 age group. |
-| **NFR-U-02** | **Contrast** | The design must comply with **AA (WCAG 2.1)** standards with a minimum 4.5:1 contrast ratio to reduce visual fatigue. |
+| **NFR-U-02** | **Contrast** | Users can view and read the content of the buttons and the application information. |
 | **NFR-U-03** | **Interactivity** | Buttons and clickable elements must have a minimum target area of **44x44 dp** to facilitate interaction for users with less digital experience. |
 | **NFR-U-04** | **Cognitive Load** | The scheduling flow must use progressive disclosure, showing a maximum of 3 fields per screen to avoid overwhelming the user. |
-| **NFR-U-05** | **Clear Navigation** | Bottom menu icons (FR14) must include mandatory text labels to ensure the interface does not require advanced organizational skills. |
+| **NFR-U-05** | **Clear Navigation** | Bottom menu icons  must include mandatory text labels to ensure the interface does not require advanced organizational skills. |
 | **NFR-U-06** | **Human Language** | Errors must be described in natural, non-technical language, always explaining the next step to resolve the issue. |
 | **NFR-U-07** | **Visual Feedback** | For any action lasting longer than 200ms, the system must show a loading indicator to mitigate anxiety when using digital interfaces. |
 
@@ -31,7 +31,7 @@ To achieve this, the workflow will be executed across four strategic pillars:
 
 - **High-Fidelity Inclusive Prototyping**: We will create visual mockups leveraging UADY’s institutional identity to foster user trust. The design will focus on flat information architecture, oversized touch targets for ease of interaction, and a clear visual hierarchy to enhance legibility.
 
-- **Non-Functional Requirements Audit**: We will evaluate the proposal under strict accessibility standards (WCAG 2.1) for users with diminished vision
+- **Non-Functional Requirements Audit**: We will evaluate the proposal under strict accessibility standards  for users with diminished vision
 
 Expected Outcome: A validated mobile application model that reduces physical queues, optimizes response times, and guarantees that all UADY beneficiaries—from maintenance staff to senior leadership—can manage their health in a dignified, autonomous, and efficient manner.
 
