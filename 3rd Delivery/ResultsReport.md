@@ -313,17 +313,17 @@ Improved Flow:
 
 **Benefits:**
 
-* Eliminates 100% of virtual keyboard problems
-* Faster (1 tap vs 50+ taps)
-* More secure (biometrics > password)
-* Accessible for users of all ages
+- Eliminates 100% of virtual keyboard problems
+- Faster (1 tap vs 50+ taps)
+- More secure (biometrics > password)
+- Accessible for users of all ages
 
 **Implementation:**
 
-* Integrate with device biometric APIs (iOS Face ID, Android Biometric API)
-* Use Microsoft Authenticator as an alternative (already mentioned by participants)
-* Maintain email/password option as fallback
-* Promote biometrics as the preferred method
+- Integrate with device biometric APIs (iOS Face ID, Android Biometric API)
+- Use Microsoft Authenticator as an alternative (already mentioned by participants)
+- Maintain email/password option as fallback
+- Promote biometrics as the preferred method
 
 **Projected Impact:** +8-10 SUS points
 
@@ -331,10 +331,10 @@ Improved Flow:
 
 **Problem:**
 
-* The user successfully completes the booking
-* But does not know where to find the appointment
-* 50-80% abandonment when trying to validate the appointment
-* Uncertainty: "Was it saved?" "Where is it?"
+- The user successfully completes the booking
+- But does not know where to find the appointment
+- 50-80% abandonment when trying to validate the appointment
+- Uncertainty: "Was it saved?" "Where is it?"
 
 **Proposed Solution: Immediate Visible Ticket**
 
@@ -374,20 +374,20 @@ Step 1-4: [same]
 
 **Benefits:**
 
-* Immediate visual confirmation of success
-* Key information visible at a glance
-* User can take a screenshot for reference
-* Reduces uncertainty ("Was it saved?")
-* Smooth transition to "My Appointments"
+- Immediate visual confirmation of success
+- Key information visible at a glance
+- User can take a screenshot for reference
+- Reduces uncertainty ("Was it saved?")
+- Smooth transition to "My Appointments"
 
 **Implementation:**
 
-* Create a modal/full-screen confirmation after appointment creation endpoint
-* Show key data: doctor, specialty, date, time, campus
-* Include reference number
-* "View Details" button navigates to appointment in "My Appointments"
-* "Share" button for WhatsApp/SMS
-* "Back to Home" button to close
+- Create a modal/full-screen confirmation after appointment creation endpoint
+- Show key data: doctor, specialty, date, time, campus
+- Include reference number
+- "View Details" button navigates to appointment in "My Appointments"
+- "Share" button for WhatsApp/SMS
+- "Back to Home" button to close
 
 **Projected Impact:** +10-12 SUS points (solves 50-80% post-booking abandonment)
 
@@ -395,10 +395,10 @@ Step 1-4: [same]
 
 **Problem:**
 
-* Users reported difficulty reading appointment details
-* 75% of Group A wears glasses; many requested larger font size
-* Current cards likely have low contrast or small text
-* Especially affects Group B (older adults)
+- Users reported difficulty reading appointment details
+- 75% of Group A wears glasses; many requested larger font size
+- Current cards likely have low contrast or small text
+- Especially affects Group B (older adults)
 
 **Proposed Solution: Appointment Card Redesign**
 
@@ -434,27 +434,27 @@ IMPROVED CARD (Expanded + Contrast):
 
 **Specifications:**
 
-* Font: +2 sizes compared to current (16px → 18-20px minimum)
-* Contrast: WCAG AA minimum (4.5:1 for normal text)
-* Spacing: Increase padding between elements
-* Visual Hierarchy: Use emojis to categorize information
-* Color-Coding: States with colors + icons (green, yellow, red)
-* Simplification: Show only 5-6 key data points; "View Details" for the rest
+- Font: +2 sizes compared to current (16px → 18-20px minimum)
+- Contrast: WCAG AA minimum (4.5:1 for normal text)
+- Spacing: Increase padding between elements
+- Visual Hierarchy: Use emojis to categorize information
+- Color-Coding: States with colors + icons (green, yellow, red)
+- Simplification: Show only 5-6 key data points; "View Details" for the rest
 
 **Benefits:**
 
-* Improved readability for users with reduced vision
-* WCAG AA accessibility compliance
-* More intuitive information with emojis
-* Lower cognitive load (less information on main screen)
-* Especially beneficial for Group B (older adults)
+- Improved readability for users with reduced vision
+- WCAG AA accessibility compliance
+- More intuitive information with emojis
+- Lower cognitive load (less information on main screen)
+- Especially beneficial for Group B (older adults)
 
 **Implementation:**
 
-* Redesign Card component in the interface
-* Update typography system
-* Audit contrast with WCAG tools (Contrast Ratio Checker)
-* A/B testing with users from both groups
+- Redesign Card component in the interface
+- Update typography system
+- Audit contrast with WCAG tools (Contrast Ratio Checker)
+- A/B testing with users from both groups
 
 **Projected Impact:** +5-7 SUS points
 
@@ -464,10 +464,10 @@ IMPROVED CARD (Expanded + Contrast):
 
 **Problem:**
 
-* After booking, users try to find their appointment
-* Confusing Information Architecture
-* Active tabs are not clearly distinguishable
-* 50-80% abandonment while searching for details
+- After booking, users try to find their appointment
+- Confusing Information Architecture
+- Active tabs are not clearly distinguishable
+- 50-80% abandonment while searching for details
 
 **Proposed Solution: Breadcrumb + Better Tab Distinction**
 
@@ -492,11 +492,11 @@ Differences:
 
 **Implementation:**
 
-* Add Breadcrumb component
-* Increase visibility of active tabs (colored background vs gray)
-* Add animated underline
-* Use emojis as tab label prefixes
-* Test with users to confirm intuitive navigation
+- Add Breadcrumb component
+- Increase visibility of active tabs (colored background vs gray)
+- Add animated underline
+- Use emojis as tab label prefixes
+- Test with users to confirm intuitive navigation
 
 **Projected Impact:** +3-5 SUS points
 
@@ -504,9 +504,9 @@ Differences:
 
 **Problem:**
 
-* Grazielita (Group B) made 5 accidental clicks
-* Likely due to post-shift fatigue and button size
-* Hit target too small (< 44x44 px)
+- Grazielita (Group B) made 5 accidental clicks
+- Likely due to post-shift fatigue and button size
+- Hit target too small (< 44x44 px)
 
 **Proposed Solution: Increase Button Sizes**
 
@@ -538,20 +538,19 @@ Example. Doctor Selector (Dropdown):
 
 **Benefits:**
 
-* Reduces accidental clicks
-* Better for users with reduced motor precision
-* Complies with WCAG AA (48px recommended)
-* Especially beneficial for Group B
+- Reduces accidental clicks
+- Better for users with reduced motor precision
+- Complies with WCAG AA (48px recommended)
+- Especially beneficial for Group B
 
 **Implementation:**
 
-* Audit design system: current button sizes
-* Increase base size from 44px to 56px
-* Increase spacing from 4px to 8px
-* Test with users after fatigue
+- Audit design system: current button sizes
+- Increase base size from 44px to 56px
+- Increase spacing from 4px to 8px
+- Test with users after fatigue
 
 **Projected Impact:** +2-3 SUS points
-
 
 #### P1.3: Add Interactive Tutorial/Onboarding
 
@@ -600,17 +599,17 @@ Final Screen: Get Started
 
 **Benefits:**
 
-* Reduces fear and initial uncertainty
-* Familiarizes users with the main flows
-* Especially valuable for Group B
-* Can be skipped by experienced users
+- Reduces fear and initial uncertainty
+- Familiarizes users with the main flows
+- Especially valuable for Group B
+- Can be skipped by experienced users
 
 **Implementation:**
 
-* Create Tutorial component
-* Store "tutorial_completed" flag in localStorage
-* Show only on first run
-* Keep "View Tutorial" option always available in Help section
+- Create Tutorial component
+- Store "tutorial_completed" flag in localStorage
+- Show only on first run
+- Keep "View Tutorial" option always available in Help section
 
 **Projected Impact:** +4-6 SUS points (especially for Group B)
 
@@ -618,9 +617,9 @@ Final Screen: Get Started
 
 **Problem:**
 
-* Alejandro suggested that when booking in a past month is not allowed, it is only grayed out without explanation
-* Users may not understand why the action is disabled
-* Suggested improvement: explicit banner saying "Appointments can only be booked for future dates"
+- Alejandro suggested that when booking in a past month is not allowed, it is only grayed out without explanation
+- Users may not understand why the action is disabled
+- Suggested improvement: explicit banner saying "Appointments can only be booked for future dates"
 
 **Proposed Solution: Toast Notification**
 
@@ -642,15 +641,15 @@ When attempting to navigate to a past month:
 
 **Benefits:**
 
-* Explains why an action is not allowed
-* Reduces confusion
-* Improves perception of system communication
+- Explains why an action is not allowed
+- Reduces confusion
+- Improves perception of system communication
 
 **Implementation:**
 
-* Detect attempts to select past months
-* Show toast/modal with explanatory message
-* Maintain visual restriction (grayed out state)
+- Detect attempts to select past months
+- Show toast/modal with explanatory message
+- Maintain visual restriction (grayed out state)
 
 **Projected Impact:** +1-2 SUS points
 
@@ -698,18 +697,18 @@ When attempting to navigate to a past month:
 
 **Pessimistic Scenario (Only P0):**
 
-* Group A: 77.5 → 85.0 (+7.5 points, +9.7%)
-* Group B: 70.0 → 78.5 (+8.5 points, +12.1%)
+- Group A: 77.5 → 85.0 (+7.5 points, +9.7%)
+- Group B: 70.0 → 78.5 (+8.5 points, +12.1%)
 
 **Realistic Scenario (P0 + P1):**
 
-* Group A: 77.5 → 88.0 (+10.5 points, +13.5%)
-* Group B: 70.0 → 82.0 (+12 points, +17.1%)
+- Group A: 77.5 → 88.0 (+10.5 points, +13.5%)
+- Group B: 70.0 → 82.0 (+12 points, +17.1%)
 
 **Optimistic Scenario (P0 + P1 + P2):**
 
-* Group A: 77.5 → 90.0 (+12.5 points, +16.1%)
-* Group B: 70.0 → 84.5 (+14.5 points, +20.7%)
+- Group A: 77.5 → 90.0 (+12.5 points, +16.1%)
+- Group B: 70.0 → 84.5 (+14.5 points, +20.7%)
 
 **Conclusion:** With implementation of P0 (3 critical changes), both groups **reach or exceed the SUS threshold of 80** (acceptable).
 
@@ -731,55 +730,55 @@ When attempting to navigate to a past month:
 
 #### 1. OPERABILITY / INTUITIVENESS: **72%**
 
-* Login Clicks: 7.3 (A) / 6.1 (B) → Acceptable
-* Appointment Clicks: 3.8 (A) / 4.1 (B) → Excellent
-* SUS: 73.75 average → Low
-* **Gap:** -8% from target
+- Login Clicks: 7.3 (A) / 6.1 (B) → Acceptable
+- Appointment Clicks: 3.8 (A) / 4.1 (B) → Excellent
+- SUS: 73.75 average → Low
+- **Gap:** -8% from target
 
 #### 2. ACCESSIBILITY: **61%**
 
-* Users with visual issues: 75%
-* Virtual Keyboard: Critical (Grazielita required assistance)
-* Button Size: 44x44px (insufficient; recommended 48x48)
-* **Gap:** -19% from target
+- Users with visual issues: 75%
+- Virtual Keyboard: Critical (Grazielita required assistance)
+- Button Size: 44x44px (insufficient; recommended 48x48)
+- **Gap:** -19% from target
 
 #### 3. SATISFACTION: **84%**
 
-* Motivation: 100% Frequent use intention
-* Trust in Branding: 100% High
-* Security Perception: 100% Very High
-* SUS: 73.75%
-* **Gap:** +4% above target
+- Motivation: 100% Frequent use intention
+- Trust in Branding: 100% High
+- Security Perception: 100% Very High
+- SUS: 73.75%
+- **Gap:** +4% above target
 
 #### 4. USER ERROR PROTECTION: **98%**
 
-* Incorrect Email: 100% recovery
-* Accidental Cancellations: 0 out of 8
-* Confirmation Modals: 100% read
-* **Gap:** +18% above target
+- Incorrect Email: 100% recovery
+- Accidental Cancellations: 0 out of 8
+- Confirmation Modals: 100% read
+- **Gap:** +18% above target
 
 #### 5. LEARNABILITY: **73%**
 
-* Login Button: 100% located
-* "Book Appointment" Button: 100% located
-* Progressive Flow: 100% understanding
-* Post-Booking: 50-80% abandonment
-* **Gap:** -7% from target
+- Login Button: 100% located
+- "Book Appointment" Button: 100% located
+- Progressive Flow: 100% understanding
+- Post-Booking: 50-80% abandonment
+- **Gap:** -7% from target
 
 #### 6. QUICK FEEDBACK: **95%**
 
-* Loading States: 0% repeated clicks
-* "No Results": 100% understand latency
-* Appointment Fetch: Full patience
-* **Gap:** +15% above target
+- Loading States: 0% repeated clicks
+- "No Results": 100% understand latency
+- Appointment Fetch: Full patience
+- **Gap:** +15% above target
 
 #### 7. LESS BRAIN WORK: **53%**
 
-* Login: Optimal (2 fields)
-* Form: Excellent (4 progressive fields)
-* Cards: Overloaded
-* Post-App Navigation: Confusing
-* **Gap:** +27% required
+- Login: Optimal (2 fields)
+- Form: Excellent (4 progressive fields)
+- Cards: Overloaded
+- Post-App Navigation: Confusing
+- **Gap:** +27% required
 
 ### 5.3 Global Summary Table
 
@@ -821,15 +820,18 @@ With P0 + P1:
 The **UADY Medical Appointment System partially complies with the defined usability attributes**, achieving **76.6% overall compliance** (4% below the 80% target).
 
 **Outstanding Attributes:**
+
 - Error Protection (98%) - Highly robust system
 - Quick Feedback (95%) - Clear communication
 - Satisfaction (84%) - High emotional trust
 
 **Critical Attributes:**
+
 - Accessibility (61%) - Barrier for users with low digital competence
 - Less Brain Work (53%) - Cognitive overload after appointment booking
 
 **Attributes Requiring Improvement:**
+
 - Operability (72%) - Login creates friction
 - Learnability (73%) - Confusion after booking appointments
 
