@@ -103,23 +103,11 @@
 - [ ] Solo cuando me llaman o me envían mensaje
 - [ ] Casi nunca
 
-**P9. ¿Tiene acceso a internet en su teléfono celular?**
-- [ ] Sí, tengo datos móviles (plan o recargas)
-- [ ] Sí, pero solo cuando hay WiFi disponible
-- [ ] No tengo acceso a internet en mi celular
-- [ ] No estoy seguro/a
-
-**P10. ¿Se conecta al WiFi de la UADY desde su celular?**
-- [ ] Sí, frecuentemente
-- [ ] Sí, pero pocas veces
-- [ ] No sé cómo conectarme
-- [ ] No, nunca lo he intentado
-
 ---
 
 ### Sección 3 — Uso de Aplicaciones y Habilidades Digitales
 
-**P11. ¿Cuáles de las siguientes aplicaciones usa en su celular? (Puede marcar varias)**
+**P9. ¿Cuáles de las siguientes aplicaciones usa en su celular? (Puede marcar varias)**
 - [ ] WhatsApp
 - [ ] Facebook
 - [ ] YouTube
@@ -129,7 +117,7 @@
 - [ ] Ninguna de las anteriores
 - [ ] Otra: _______________
 
-**P12. ¿Quién le ayuda generalmente a instalar o configurar aplicaciones en su teléfono?**
+**P10. ¿Quién le ayuda generalmente a instalar o configurar aplicaciones en su teléfono?**
 - [ ] Yo mismo/a, sin ayuda
 - [ ] Un familiar (hijo/a, sobrino/a, pareja, etc.)
 - [ ] Un compañero/a de trabajo
