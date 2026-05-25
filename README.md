@@ -29,8 +29,6 @@ To achieve this, the workflow will be executed across four strategic pillars:
 
 - **Digital Gap Analysis**: We will process the gathered data to design navigation flows that eliminate complexity. We will prioritize solutions that translate "service window" procedures into intuitive digital steps, ensuring that no beneficiary is excluded regardless of their level of technical expertise.
 
-- **High-Fidelity Inclusive Prototyping**: We will create visual mockups leveraging UADY’s institutional identity to foster user trust. The design will focus on flat information architecture, oversized touch targets for ease of interaction, and a clear visual hierarchy to enhance legibility.
-
 - **Non-Functional Requirements Audit**: We will evaluate the proposal under strict accessibility standards  for users with diminished vision
 
 Expected Outcome: A validated mobile application model that reduces physical queues, optimizes response times, and guarantees that all UADY beneficiaries—from maintenance staff to senior leadership—can manage their health in a dignified, autonomous, and efficient manner.
