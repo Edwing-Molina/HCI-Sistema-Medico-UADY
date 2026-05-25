@@ -78,4 +78,4 @@ Expected Outcome: A validated mobile application model that reduces physical que
 
 ## Activities Scheduling
 
-[Distribution of work](3rd%Delivery/SchedulingActivities.md)
+[Distribution of work](/3rd%20Delivery/SchedulingActivities.md)
