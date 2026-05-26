@@ -797,91 +797,93 @@ ERR-02, ERR-03, and ERR-04 passed cleanly. No participant accidentally cancelled
 
 ### 5.5 Attribute 4: Satisfaction
 
-**Target:** ≥ 80% of scenarios passed
+**Target:** SUS average score ≥ 80 points (industry-standard acceptability threshold)
 
-#### Traceability Table
+Unlike the other three attributes, Satisfaction is measured directly through the **System Usability Scale (SUS)**, the standardized instrument specifically designed to capture users' subjective perception of a system. The SUS produces a 0–100 score where ≥ 80 is considered "Good" and the accepted industry minimum for a satisfactory product. Using scenario pass/fail criteria for Satisfaction would introduce interpretive bias; the SUS score is the direct, validated measurement for this construct.
 
-| ID | Scenario | Artifact | Pass criterion | Observed result | Status |
-|---|---|---|---|---|---|
-| SAT-01 | Sense of achievement — first booking completed | Updated appointment list | 0 "Was it saved?" questions; 100% flow completion | 3/8 asked "Was it saved?"; 98% Gr. A / 93% Gr. B completed | **FAIL** |
-| SAT-02 | Session persistence | Session manager | 100% access without re-entering credentials; positive reaction observed | 100% in both groups; no re-login required | **PASS** |
-| SAT-03 | Institutional trust — UADY branding | Login design + branding | 100% identify as official system; high perceived trust verbalized | 100% (8/8) identified as official; 100% expressed high trust | **PASS** |
+#### SUS Results by Group
 
-**How the score was obtained:**
+| Metric | Group A (Manual Workers) | Group B (Older Adults) | Global Average |
+|---|---|---|---|
+| **Average SUS Score** | 77.5 / 100 | 70.0 / 100 | **73.75 / 100** |
+| **Score Range** | 40.0 – 100.0 | 68.0 – 75.0 | — |
+| **Standard Deviation** | ±23.6 | ±3.2 | — |
+| **Industry Category** | Good (borderline) | Marginal | Marginal |
+| **Meets ≥ 80 threshold** | No | No | **No** |
 
-SAT-02 and SAT-03 passed decisively. Session persistence worked for all 8 participants and no one had to re-enter credentials, which was especially valuable for low-competence users. The institutional branding (UADY logo combined with Microsoft SSO) was recognized as secure and professional by every participant, a factor that qualitatively compensated for friction in other areas. SAT-01 fails because 3 out of 8 participants verbalized uncertainty about whether their booking had been registered ("Did it save?", "Did it go through?"), and both groups showed 50–80% abandonment when trying to visually confirm the appointment after booking. The functional completion rate is high (95.5% average), but the perceived success rate is substantially lower due to the absence of a confirmation screen.
+#### How the score was obtained
 
-**Score: 2 passed + 0 partial = 2 / 3 → 66.7%**
+The SUS was applied individually to all 8 participants immediately after completing the test tasks. Each participant answered 10 standardized Likert-scale questions on a 1–5 scale; scores were then converted to the 0–100 SUS scale using the standard formula. The global average (73.75) is the mean of all individual scores across both groups.
 
-**Gap from target: −13.3%** — Below target. The gap is driven entirely by the absence of post-booking confirmation, which is the highest-impact single fix in the entire system (P0.2).
+Group A's high variability (SD ±23.6, range 40–100) indicates that satisfaction is strongly tied to individual digital competence rather than to any single interface element. Group B's low variability (SD ±3.2, range 68–75) reflects a consistently moderate experience across all older participants. Both groups fall below the 80-point threshold, confirming that satisfaction is not yet at an acceptable level for the target population as a whole.
+
+Qualitative data from the post-SUS interview supports and contextualizes these scores: all 8 participants stated they would use the app frequently, primarily because the current appointment system (phone-based) generates significantly more frustration. This explains why scores are not lower — users compare the app against a worse baseline, not against an ideal standard. The institutional branding (UADY + Microsoft SSO) also raised perceived confidence, partially compensating for operational friction.
+
+**SUS Score: 73.75 / 100**
+
+**Gap from target: −6.25 points** — Below target. The gap reflects real operational friction (login difficulty, post-booking uncertainty) rather than distrust in the system. Users are willing to use it, but the experience does not yet meet the industry acceptability standard.
+
+#### SUS Score Interpretation Reference
+
+| SUS Range | Adjective Rating | Acceptability |
+|---|---|---|
+| ≥ 90 | Best Imaginable | Acceptable |
+| 80 – 89 | Excellent | Acceptable |
+| 70 – 79 | Good | Marginal |
+| 60 – 69 | OK | Marginal |
+| < 60 | Poor | Not Acceptable |
+
+*Source: Bangor, Kortum & Miller (2009); Sauro & Lewis (2012)*
+
+Both groups fall in the **Marginal** zone. Group A (77.5) is close to the Good/Acceptable boundary; Group B (70.0) sits at the lower end of Marginal. Neither group reaches Acceptable.
 
 ---
 
 ### 5.6 Global Compliance Summary
 
-The following table consolidates the scenario-derived scores from all four evaluated attributes.
+The following table consolidates the scores from all four evaluated attributes. Accessibility, Learnability, and Error Protection are measured via scenario pass/fail traceability. Satisfaction is measured directly via the SUS score, normalized to the same 0–100 scale for comparison.
 
-| Attribute | Scenarios (Pass / Partial / Fail) | Score | Target | Gap | Status |
+| Attribute | Measurement Method | Score | Target | Gap | Status |
 |---|---|---|---|---|---|
-| Accessibility | 2 / 1 / 1 of 4 | **62.5%** | 80% | −17.5% | Significantly below |
-| Learnability | 4 / 0 / 1 of 5 | **80.0%** | 80% | 0% | At target |
-| Error Protection | 3 / 1 / 0 of 4 | **87.5%** | 80% | +7.5% | Above target |
-| Satisfaction | 2 / 0 / 1 of 3 | **66.7%** | 80% | −13.3% | Below target |
-| **Global Average** | **11 / 2 / 3 of 16** | **74.2%** | **80%** | **−5.8%** | **Below target** |
+| Accessibility | Scenario traceability (2/1/1 of 4) | **62.5%** | 80% | −17.5% | Significantly below |
+| Learnability | Scenario traceability (4/0/1 of 5) | **80.0%** | 80% | 0% | At target |
+| Error Protection | Scenario traceability (3/1/0 of 4) | **87.5%** | 80% | +7.5% | Above target |
+| Satisfaction | SUS score — 8 participants | **73.75%** | 80% | −6.25% | Below target |
+| **Global Average** | Mixed (scenarios + SUS) | **75.9%** | **80%** | **−4.1%** | **Below target** |
 
 **Global compliance formula:**
 
 ```
-(62.5 + 80.0 + 87.5 + 66.7) / 4 = 74.2%
+(62.5 + 80.0 + 87.5 + 73.75) / 4 = 75.94% ≈ 75.9%
 ```
 
-**Status: MARGINALLY NON-COMPLIANT** — 5.8% below the 80% minimum target.
+**Status: MARGINALLY NON-COMPLIANT** — 4.1% below the 80% minimum target.
 
 ---
 
 ### 5.7 How to Reach 80% Compliance
 
-The three critical deficiencies identified through the traceability model are:
+The three critical deficiencies identified through the measurement model are:
 
 1. **ACC-03** (appointment card contrast and hierarchy) → P0.3
-2. **LRN-SAT / SAT-01** (no post-booking confirmation screen) → P0.2
+2. **LRN-SAT** (no post-booking confirmation screen) → P0.2
 3. **ACC-01** (insufficient touch target size) → P1.2
 
-Implementing P0 + P1 would improve the affected scenarios as follows:
+For Satisfaction, the SUS gap of −6.25 points is expected to close as the friction points driving low scores are addressed — primarily the login barrier (P0.1) and post-booking uncertainty (P0.2), which were the most frequently cited sources of frustration in post-test interviews. The projected SUS improvement of +8–12 points with P0 implementation would bring the average to approximately 82–86, placing both groups above the 80-point threshold.
+
+Implementing P0 + P1 would improve the affected attributes as follows:
 
 | Attribute | Current | Post P0+P1 (projected) | Change |
 |---|---|---|---|
 | Accessibility | 62.5% | 75.0% | +12.5% |
 | Learnability | 80.0% | 90.0% | +10.0% |
 | Error Protection | 87.5% | 90.0% | +2.5% |
-| Satisfaction | 66.7% | 83.3% | +16.6% |
-| **Global Average** | **74.2%** | **84.6%** | **+10.4%** |
+| Satisfaction (SUS) | 73.75 pts | ~83–86 pts | +9–12 pts |
+| **Global Average** | **75.9%** | **~85.5%** | **~+9.6%** |
 
-**With P0 + P1 implemented, the system would reach 84.6%, surpassing the 80% target.**
+**With P0 + P1 implemented, the system would reach approximately 85.5%, surpassing the 80% target.**
 
-## Final Conclusion
-
-The **UADY Medical Appointment System partially complies with the defined usability attributes**, achieving **76.6% overall compliance** (4% below the 80% target).
-
-**Outstanding Attributes:**
-
-- Error Protection (98%) - Highly robust system
-- Quick Feedback (95%) - Clear communication
-- Satisfaction (84%) - High emotional trust
-
-**Critical Attributes:**
-
-- Accessibility (61%) - Barrier for users with low digital competence
-- Less Brain Work (53%) - Cognitive overload after appointment booking
-
-**Attributes Requiring Improvement:**
-
-- Operability (72%) - Login creates friction
-- Learnability (73%) - Confusion after booking appointments
-
-### Implication
-
-The system is **functional but requires improvements in accessibility and cognitive load reduction** to reach industry standards. The P0 recommendations (Biometrics, Immediate Ticket, Improved Readability) would allow the system to achieve **84.5% overall compliance**, surpassing the 80% target and making the system truly accessible for all target users.
+---
 
 ## General Conclusions
 
@@ -894,7 +896,7 @@ The **UADY Medical Appointment System partially complies with the defined usabil
 
 **Attributes below target:**
 
-- Satisfaction (66.7%) — high functional completion but low perceived success due to the absence of post-booking confirmation
+- Satisfaction (73.75 pts) — high functional completion but low perceived success due to the absence of post-booking confirmation
 - Accessibility (62.5%) — barriers persist for users with visual difficulty and reduced motor precision
 
 **The three changes that would most directly close the compliance gap, ordered by projected impact:**
